@@ -1,4 +1,4 @@
-import { fotoposeLogo } from "@/assets/images";
+import { fotoposeLogo } from "@/public/images";
 import Image from "next/image";
 import MobileMenu from "../shared/MobileMenu";
 import { MenuSection } from "../shared/interfaces";
@@ -84,7 +84,7 @@ export default function Home() {
       >
         {/* Sección 1 - Maquillaje */}
         <div
-          className="bg-[url(../../assets/images/pictures/lp_maquillaje_1.png)] bg-cover bg-center bg-no-repeat
+          className="bg-[url(@/public/images/pictures/lp_maquillaje_1.png)] bg-cover bg-center bg-no-repeat
           w-full h-svh flex flex-col justify-center items-center gap-10"
         >
           {/* Red social */}
@@ -116,7 +116,7 @@ export default function Home() {
 
         {/* Sección 2 - Modelaje */}
         <div
-          className="bg-[url(../../assets/images/pictures/lp_modelaje_1.png)] bg-cover bg-center bg-no-repeat
+          className="bg-[url(@/public/images/pictures/lp_modelaje_1.png)] bg-cover bg-center bg-no-repeat
           w-full h-svh flex flex-col justify-center items-center gap-10"
         >
           {/* Titulo de la sección */}
@@ -146,7 +146,7 @@ export default function Home() {
 
         {/* Sección 3 - Servicios */}
         <div
-          className="bg-[url(../../assets/images/pictures/lp_servicios_1.png)] bg-cover bg-center bg-no-repeat
+          className="bg-[url(@/public/images/pictures/lp_servicios_1.png)] bg-cover bg-center bg-no-repeat
           w-full h-svh flex flex-col justify-center items-center gap-10"
         >
           {/* Titulo de la sección */}
@@ -182,7 +182,7 @@ export default function Home() {
           <div className="flex flex-col gap-5 lg:gap-10 lg:w-1/2">
             {/* Curso de Marketing */}
             <div
-              className="bg-[url(../../assets/images/pictures/lp_marketing_1.png)] bg-cover bg-center bg-no-repeat
+              className="bg-[url(@/public/images/pictures/lp_marketing_1.png)] bg-cover bg-center bg-no-repeat
               relative flex flex-col gap-2 p-10 w-full aspect-square rounded-xl shadow-2xl"
             >
               <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
@@ -197,7 +197,7 @@ export default function Home() {
 
             {/* Curso de Cejas y pestañas */}
             <div
-              className="bg-[url(../../assets/images/pictures/lp_cejas_1.png)] bg-cover bg-center bg-no-repeat
+              className="bg-[url(@/public/images/pictures/lp_cejas_1.png)] bg-cover bg-center bg-no-repeat
               relative flex flex-col gap-2 p-10 w-full aspect-square rounded-xl shadow-2xl"
             >
               <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
@@ -213,7 +213,7 @@ export default function Home() {
           <div className="flex flex-col gap-5 lg:gap-10 lg:w-1/2">
             {/* Curso de Marketing */}
             <div
-              className="bg-[url(../../assets/images/pictures/lp_modelaje_2.png)] bg-cover bg-center bg-no-repeat
+              className="bg-[url(@/public/images/pictures/lp_modelaje_2.png)] bg-cover bg-center bg-no-repeat
               relative flex flex-col gap-2 p-10 w-full lg:h-full aspect-square lg:aspect-auto rounded-xl shadow-2xl"
             >
               <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
@@ -230,7 +230,7 @@ export default function Home() {
         {/* Sección 5 - Nosotros */}
         <div className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10">
           <div
-            className="bg-[url(../../assets/images/pictures/lp_nosotros_1.png)] bg-cover bg-center bg-no-repeat
+            className="bg-[url(@/public/images/pictures/lp_nosotros_1.png)] bg-cover bg-center bg-no-repeat
             relative flex flex-col gap-2 p-10 w-full aspect-square lg:aspect-video rounded-xl shadow-2xl"
           >
             <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
@@ -242,7 +242,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className="bg-[url(../../assets/images/pictures/lp_nosotros_2.png)] bg-cover bg-center bg-no-repeat
+            className="bg-[url(@/public/images/pictures/lp_nosotros_2.png)] bg-cover bg-center bg-no-repeat
             relative flex flex-col gap-2 p-10 w-full aspect-square lg:aspect-video rounded-xl shadow-2xl"
           >
             <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
