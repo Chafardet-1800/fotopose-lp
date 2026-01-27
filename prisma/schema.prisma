@@ -1,0 +1,103 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// 1. Definimos un "Tipo Compuesto" para las fechas
+// Esto no crea una colección nueva, vive dentro de Course
+type AvailableDate {
+  duration String // Ej: "2 semanas", "40 horas"
+  month    String // Ej: "Agosto", "Septiembre"
+}
+
+model User {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  displayName String
+  email       String?  @unique // Es buena práctica hacerlo único
+  photoUrl    String?
+  isProvider  Boolean? @default(false)
+  createdAt   DateTime @default(now())
+
+  // Relaciones inversas (Un usuario puede tener muchos...)
+  courses  Course[]
+  services Service[]
+  models   Model[]
+}
+
+model Course {
+  id                   String     @id @default(auto()) @map("_id") @db.ObjectId
+  title                String
+  description          String
+  price                Float
+  offerPrice           Float?
+  imageUrl             String?
+  createdAt            DateTime        @default(now())
+  courseType           String          
+  materialRequirements String[]
+  availableDates       AvailableDate[]
+
+  // Relación con User (Provider)
+  provider   User?   @relation(fields: [providerId], references: [id])
+  providerId String? @db.ObjectId
+}
+
+model Service {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  description String
+  serviceType String
+  price       Float
+  offerPrice  Float?
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+
+  // Relación con User (Provider)
+  provider   User?   @relation(fields: [providerId], references: [id])
+  providerId String? @db.ObjectId
+}
+
+model Model {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  name          String
+  bio           String
+  contactInfo   String?
+  createdAt     DateTime @default(now())
+  profileImage  String?
+
+  // Relación con User (Provider)
+  provider   User?   @relation(fields: [providerId], references: [id])
+  providerId String? @db.ObjectId
+
+  // Relación inversa con PortfolioImage
+  portfolioImages PortfolioImage[]
+}
+
+model PortfolioImage {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  imageUrl    String
+  description String?
+  order       Int?
+  createdAt   DateTime @default(now())
+
+  // Relación con Model
+  model   Model?  @relation(fields: [modelId], references: [id])
+  modelId String? @db.ObjectId
+}
+
+model LandingPageImage {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  imageUrl    String
+  key         String   @unique
+  createdAt   DateTime @default(now())
+}
