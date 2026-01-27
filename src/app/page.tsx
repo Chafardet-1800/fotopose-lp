@@ -1,8 +1,8 @@
 import { fotoposeLogo } from "@/assets/images";
 import Image from "next/image";
-import MobileMenu from "./shared/MobileMenu";
-import { MenuSection } from "./shared/interfaces";
-import DesktopMenu from "./shared/DesktopMenu";
+import MobileMenu from "../shared/MobileMenu";
+import { MenuSection } from "../shared/interfaces";
+import DesktopMenu from "../shared/DesktopMenu";
 import Link from "next/link";
 
 // Esto evitará que alguien intente navegar a /courses?type=inventado
