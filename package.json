@@ -1,6 +1,6 @@
 {
   "name": "fotopose-lp",
-  "version": "0.1.002",
+  "version": "0.1.003",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@prisma/client": "6.19",
     "@prisma/nextjs-monorepo-workaround-plugin": "^7.2.0",
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.2.3",
     "lucide-react": "^0.563.0",
     "next": "16.1.4",
