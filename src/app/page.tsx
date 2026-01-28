@@ -33,18 +33,20 @@ export default function Home() {
 
           {/* botones de enrrutado */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
-            <button
+            <Link
+              href="/course?type=aesthetics"
               className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
-             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
             >
               Inscribirse
-            </button>
-            <button
+            </Link>
+            <Link
+              href="/course?type=aesthetics"
               className="min-w-40 rounded-xl p-2 border border-black text-black
-             dark:border-white dark:text-white hover:bg-black hover:text-white"
+             dark:border-white dark:text-white hover:bg-black hover:text-white text-center"
             >
               Más información
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -72,18 +74,20 @@ export default function Home() {
 
           {/* botones de enrrutado */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
-            <button
+            <Link
+              href="/course?type=modeling"
               className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
-             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
             >
               Postularse
-            </button>
-            <button
+            </Link>
+            <Link
+              href="/course?type=modeling"
               className="min-w-40 rounded-xl p-2 border border-black text-black
-             dark:border-white dark:text-white hover:bg-black hover:text-white"
+             dark:border-white dark:text-white hover:bg-black hover:text-white text-center"
             >
               Más información
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -107,19 +111,19 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
             <button
               className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
-             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
             >
               Belleza
             </button>
             <button
               className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
-             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
             >
               Modelos
             </button>
             <button
               className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
-             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
+             dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
             >
               Fotografia
             </button>

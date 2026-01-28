@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import CourseCarousel from "./CourseCarousel";
-import CourseDetails from "./CourseDetails";
 import { CourseData } from "@/src/data/courses/courses_data";
+import MakeupDetail from "./MakeupDetail";
+import ModelingDetail from "./ModelingDetail";
+import MarketingDetail from "./MarketingDetail";
 
 interface Props {
   initialIndex: number;
@@ -25,7 +27,13 @@ export default function CourseView({ initialIndex, courses }: Props) {
 
       {/* 2. Contenido Dinámico: Solo recibe los datos del curso actual */}
       <div className="flex-1 bg-white dark:bg-black">
-        <CourseDetails type={courses[currentIndex].slug} />
+        {courses[currentIndex].slug == "modeling" ? (
+          <ModelingDetail />
+        ) : courses[currentIndex].slug == "aesthetics" ? (
+          <MakeupDetail />
+        ) : courses[currentIndex].slug == "marketing" ? (
+          <MarketingDetail />
+        ) : null}
       </div>
     </div>
   );
