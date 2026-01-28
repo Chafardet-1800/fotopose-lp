@@ -205,9 +205,16 @@ export default function Home() {
         {/* Sección 5 - Nosotros */}
         <section className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10 rounded-2xl">
           <div
-            className="bg-[url(/images/pictures/lp_nosotros_1.png)] bg-cover bg-center bg-no-repeat
-            relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
+            className="relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 
+            aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
           >
+            <Image
+              src="/images/pictures/lp_nosotros_1.png"
+              alt="Desfiles de moda FOTOPOSEV"
+              fill
+              className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+            />
+
             <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
             <p className="text-2xl lg:text-4xl font-bold z-10">
@@ -220,9 +227,16 @@ export default function Home() {
           </div>
 
           <div
-            className="bg-[url(/images/pictures/lp_nosotros_2.png)] bg-cover bg-center bg-no-repeat
-            relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
+            className="relative flex flex-col justify-end gap-2 p-10 w-full 
+          lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
           >
+            <Image
+              src="/images/pictures/lp_nosotros_2.png"
+              alt="Desfiles de moda FOTOPOSEV"
+              fill
+              className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+            />
+
             <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
             <p className="text-2xl lg:text-4xl font-bold z-10">
