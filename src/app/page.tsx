@@ -1,91 +1,26 @@
 import Image from "next/image";
-import MobileMenu from "../shared/MobileMenu";
-import { MenuSection } from "../shared/interfaces";
-import DesktopMenu from "../shared/DesktopMenu";
 import Link from "next/link";
 
 // Esto evitará que alguien intente navegar a /courses?type=inventado
 export default function Home() {
-  // Definimos las secciones del menú
-  const menu: MenuSection[] = [
-    {
-      title: "Cursos",
-      items: [
-        {
-          label: "Belleza",
-          descripcion:
-            "Explora nuestras opciones de cursos de maquillaje y más.",
-          href: "/course",
-          slug: "aesthetics",
-        },
-        {
-          label: "Modelaje",
-          descripcion:
-            "Descubre todo sobre el modelaje profesional que podemos enseñarte.",
-          href: "/course",
-          slug: "modeling",
-        },
-        {
-          label: "Marketing",
-          descripcion:
-            "Aprende a manejar tus redes sociales de manera profesional.",
-          href: "/course",
-          slug: "marketing",
-        },
-      ],
-    },
-    {
-      title: "Servicios",
-      items: [
-        {
-          label: "Consultoría",
-          descripcion: "Explora nuestras opciones de Consultoría",
-          href: "/services",
-          slug: "modeling",
-        },
-        {
-          label: "Desarrollo a Medida",
-          descripcion: "Explora nuestras opciones de Desarrollo a Medida",
-          href: "/services",
-          slug: "photography",
-        },
-      ],
-    },
-  ];
-
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans bg-white dark:bg-black">
-      <header className="fixed top-0 z-50 w-full bg-black border-b backdrop-blur-md">
-        <div className="relative w-full px-6 h-20 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="hover:opacity-80 transition-opacity">
-            <Image
-              src="/images/logos/fotopose_logo.png"
-              alt="Logo de Fotopose venezuela"
-              width={70}
-              height={30}
-              priority
-            />
-          </Link>
-
-          {/* Navegación */}
-          <DesktopMenu sections={menu} />
-
-          {/* Mobile Menu */}
-          <MobileMenu sections={menu} />
-        </div>
-      </header>
-
       <main
         className="flex min-h-screen w-full flex-col items-center justify-between
       bg-white dark:bg-black sm:items-start pt-16"
       >
         {/* Sección 1 - Maquillaje */}
-        <div
-          className="bg-[url(/images/pictures/lp_maquillaje_1.png)] bg-cover bg-center bg-no-repeat
-          w-full h-svh flex flex-col justify-center items-center gap-10 relative"
-        >
+        <section className="w-full h-svh flex flex-col justify-center items-center gap-10 relative">
+          {/* Imagen de Fondo */}
+          <Image
+            src="/images/pictures/lp_maquillaje_1.png"
+            alt="Cusos de maquillaje profesional"
+            fill
+            className="object-cover brightness-80" // Oscurecemos para que el texto resalte
+          />
+
           <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
           {/* Red social */}
           <p className="text-xl text-black/90 dark:text-white/90 z-10">
             @FOTOPOSEVMAKEUP
@@ -111,13 +46,18 @@ export default function Home() {
               Más información
             </button>
           </div>
-        </div>
+        </section>
 
         {/* Sección 2 - Modelaje */}
-        <div
-          className="bg-[url(/images/pictures/lp_modelaje_1.png)] bg-cover bg-center bg-no-repeat
-          w-full h-svh flex flex-col justify-center items-center gap-10 relative"
-        >
+        <section className="w-full h-svh flex flex-col justify-center items-center gap-10 relative">
+          {/* Imagen de Fondo */}
+          <Image
+            src="/images/pictures/lp_modelaje_1.png"
+            alt="Cusos de modelaje profesional"
+            fill
+            className="object-cover brightness-80" // Oscurecemos para que el texto resalte
+          />
+
           <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
           {/* Titulo de la sección */}
@@ -145,13 +85,17 @@ export default function Home() {
               Más información
             </button>
           </div>
-        </div>
+        </section>
 
         {/* Sección 3 - Servicios */}
-        <div
-          className="bg-[url(/images/pictures/lp_servicios_1.png)] bg-cover bg-center bg-no-repeat
-          w-full h-svh flex flex-col justify-center items-center gap-10 relative"
-        >
+        <section className="w-full h-svh flex flex-col justify-center items-center gap-10 relative">
+          <Image
+            src="/images/pictures/lp_servicios_1.png"
+            alt="Servicios de maquillaje y modelaje profesional"
+            fill
+            className="object-cover brightness-80" // Oscurecemos para que el texto resalte
+          />
+
           <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
           {/* Titulo de la sección */}
@@ -180,16 +124,23 @@ export default function Home() {
               Fotografia
             </button>
           </div>
-        </div>
+        </section>
 
         {/* Sección 4 - Cursos Varios */}
-        <div className="flex flex-col lg:flex-row  w-full p-5 gap-5 lg:p-10 lg:gap-10">
+        <section className="flex flex-col lg:flex-row  w-full p-5 gap-5 lg:p-10 lg:gap-10">
           <div className="flex flex-col gap-5 lg:gap-10 lg:w-1/2">
             {/* Curso de Marketing */}
-            <div
-              className="bg-[url(/images/pictures/lp_marketing_1.png)] bg-cover bg-center bg-no-repeat
-              relative flex flex-col gap-2 p-10 w-full aspect-square rounded-xl shadow-2xl"
+            <Link
+              href="/course?type=marketing"
+              className="relative flex flex-col gap-2 p-10 w-full aspect-square rounded-2xl shadow-2xl cursor-pointer"
             >
+              <Image
+                src="/images/pictures/lp_marketing_1.png"
+                alt="Cursos de marketing profesional"
+                fill
+                className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+              />
+
               <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/60 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
               <p className="text-2xl lg:text-4xl font-bold z-10">
@@ -199,13 +150,20 @@ export default function Home() {
               <p className="text-xl text-black/90 dark:text-white/90 z-10">
                 Aprende Justo lo que necesitas praa tus objetivos
               </p>
-            </div>
+            </Link>
 
             {/* Curso de Cejas y pestañas */}
-            <div
-              className="bg-[url(/images/pictures/lp_cejas_1.png)] bg-cover bg-center bg-no-repeat
-              relative flex flex-col gap-2 p-10 w-full aspect-square rounded-xl shadow-2xl"
+            <Link
+              href="/course?type=aesthetics"
+              className="relative flex flex-col gap-2 p-10 w-full aspect-square rounded-2xl shadow-2xl cursor-pointer"
             >
+              <Image
+                src="/images/pictures/lp_cejas_1.png"
+                alt="Cursos de marketing profesional"
+                fill
+                className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+              />
+
               <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/60 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
               <p className="text-2xl lg:text-4xl font-bold z-10">
@@ -215,15 +173,22 @@ export default function Home() {
               <p className="text-xl text-black/90 dark:text-white/90 z-10">
                 Call out a feature, benefit, or value that can stand on its own.
               </p>
-            </div>
+            </Link>
           </div>
 
           <div className="flex flex-col gap-5 lg:gap-10 lg:w-1/2">
             {/* Curso de Modelaje personalizado */}
-            <div
-              className="bg-[url(/images/pictures/lp_modelaje_2.png)] bg-cover bg-center bg-no-repeat
-              relative flex flex-col gap-2 p-10 w-full lg:h-full aspect-square lg:aspect-auto rounded-xl shadow-2xl"
+            <Link
+              href="/course?type=modeling"
+              className="relative flex flex-col gap-2 p-10 w-full lg:h-full aspect-square lg:aspect-auto rounded-2xl shadow-2xl cursor-pointer"
             >
+              <Image
+                src="/images/pictures/lp_modelaje_2.png"
+                alt="Cursos de modelaje personalizado"
+                fill
+                className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+              />
+
               <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/60 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
               <p className="text-2xl lg:text-4xl font-bold z-10">
@@ -233,12 +198,12 @@ export default function Home() {
               <p className="text-xl text-black/90 dark:text-white/90 z-10">
                 HERRAMIENTAS PARA CUALQUIER PROFESION U OFICIO
               </p>
-            </div>
+            </Link>
           </div>
-        </div>
+        </section>
 
         {/* Sección 5 - Nosotros */}
-        <div className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10 rounded-2xl">
+        <section className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10 rounded-2xl">
           <div
             className="bg-[url(/images/pictures/lp_nosotros_1.png)] bg-cover bg-center bg-no-repeat
             relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
@@ -268,7 +233,7 @@ export default function Home() {
               Aprende Justo lo que necesitas praa tus objetivos
             </p>
           </div>
-        </div>
+        </section>
       </main>
 
       <footer className="w-full px-10 pb-30 flex flex-col md:flex-row justify-between">
