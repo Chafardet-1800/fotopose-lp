@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ModelingDetail() {
   return (
-    <div className="flex flex-col gap-15 pb-25">
+    <div className="flex-col gap-15 pb-25">
       {/* Segmento de pestañás */}
       <section className="flex flex-col gap-15 py-15 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
@@ -50,7 +50,7 @@ export default function ModelingDetail() {
       </section>
 
       {/* Slider lateral a la derecha */}
-      <div className="w-full h-[60vh] lg:h-[70vh] flex items-center gap-5 overflow-x-scroll scroll-hidden">
+      <section className="w-full h-[60vh] lg:h-[70vh] flex items-center gap-5 overflow-x-scroll scroll-hidden">
         <div
           className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
             aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
@@ -187,7 +187,7 @@ export default function ModelingDetail() {
             Inscribirme
           </button>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

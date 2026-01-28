@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function MakeupDetail() {
   return (
-    <div className="flex-col">
+    <div className="flex-col gap-15 pb-25">
       {/* Seccion de maquillaje */}
-      <section className="flex flex-1 flex-col gap-15 py-15 items-center">
+      <section className="flex flex-1 flex-col gap-15 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
@@ -151,7 +151,7 @@ export default function MakeupDetail() {
       </section>
 
       {/* Segmento de pestañás */}
-      <section className="flex flex-col gap-15 py-15 items-center">
+      <section className="flex flex-col gap-15 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
@@ -197,7 +197,7 @@ export default function MakeupDetail() {
       </section>
 
       {/* Segmento de Cejas */}
-      <section className="flex flex-col gap-15 py-15 items-center">
+      <section className="flex flex-col gap-15 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
@@ -242,7 +242,7 @@ export default function MakeupDetail() {
       </section>
 
       {/* Segmento de Depilacion */}
-      <section className="flex flex-col gap-15 py-15 items-center">
+      <section className="flex flex-col gap-15 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
