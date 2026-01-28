@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MarketingDetail() {
   return (
-    <div className="flex flex-col gap-15 pb-25">
+    <div className="flex flex-col gap-15 py-25">
       {/* Segmento de pestañás */}
       <section className="flex flex-col gap-15 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">

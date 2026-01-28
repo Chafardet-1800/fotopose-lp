@@ -230,7 +230,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div
+          <Link
+            href="/blurb/forum"
             className="relative flex flex-col justify-end gap-2 p-10 w-full 
           lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
           >
@@ -244,13 +245,16 @@ export default function Home() {
             <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
             <p className="text-2xl lg:text-4xl font-bold z-10">
-              Curso de Marketing Personalizado
+              Ultimas actividades
             </p>
 
             <p className="text-xl text-black/90 dark:text-white/90 z-10">
-              Aprende Justo lo que necesitas praa tus objetivos
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+              asperiores inventore odit, dignissimos iste rem debitis quo, harum
+              sapiente provident corrupti quasi. Nihil explicabo quidem
+              asperiores ipsum, aut autem consequatur.
             </p>
-          </div>
+          </Link>
         </section>
       </main>
     </div>
