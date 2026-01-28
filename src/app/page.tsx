@@ -208,7 +208,8 @@ export default function Home() {
 
         {/* Sección 5 - Nosotros */}
         <section className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10 rounded-2xl">
-          <div
+          <Link
+            href="/blurb/about_us"
             className="relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 
             aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
           >
@@ -222,13 +223,16 @@ export default function Home() {
             <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
             <p className="text-2xl lg:text-4xl font-bold z-10">
-              Curso de Marketing Personalizado
+              Nuestros valores y objetivos
             </p>
 
             <p className="text-xl text-black/90 dark:text-white/90 z-10">
-              Aprende Justo lo que necesitas praa tus objetivos
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+              laboriosam omnis dolorem odit dolore porro iste harum veritatis
+              officia eius nihil temporibus rem, ullam fuga quae officiis
+              tempore tempora quasi.
             </p>
-          </div>
+          </Link>
 
           <Link
             href="/blurb/forum"
