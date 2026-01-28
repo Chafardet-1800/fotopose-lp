@@ -21,12 +21,12 @@ export default function MobileMenu({ sections }: { sections: MenuSection[] }) {
       </button>
       {/* Overlay y Menú */}
       <div
-        className={`fixed inset-0 z-100 bg-white dark:bg-black transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed inset-0 z-100 bg-black transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex flex-col h-full p-6">
           {/* Header del Menú */}
           <div className="flex justify-between items-center mb-10">
-            <span className="font-bold text-xl">Menú</span>
+            <span className="text-white font-bold text-xl">Menú</span>
             <button onClick={() => setIsOpen(false)} className="p-2">
               <X size={28} color="#fff" />
             </button>
@@ -38,7 +38,7 @@ export default function MobileMenu({ sections }: { sections: MenuSection[] }) {
               <div key={index} className="border-b border-gray-100 pb-4">
                 <button
                   onClick={() => toggleSection(section.title)}
-                  className="flex justify-between items-center w-full text-lg font-semibold capitalize"
+                  className="flex justify-between items-center w-full text-white text-lg font-semibold capitalize"
                 >
                   {section.title}
                   <ChevronDown

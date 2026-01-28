@@ -26,12 +26,12 @@ function NavItem({ title, items }: { title: string; items: MenuItem[] }) {
 
       {/* Contenedor Desplegable */}
       <div
-        className="absolute top-20 left-0 w-full bg-white border-b border-gray-200 
-                      opacity-0 invisible translate-y-2.5 
+        className="absolute top-20 left-0 bg-white border-b border-gray-200 
+                      opacity-0 invisible translate-y-2.5
                       group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
                       transition-all duration-300 ease-out shadow-xl"
       >
-        <div className="max-w-7xl mx-auto px-10 py-8 grid grid-cols-3 gap-4">
+        <div className="mx-auto px-10 py-8 grid grid-cols-3 gap-4">
           {items.map((item) => (
             <Link
               key={item.slug}

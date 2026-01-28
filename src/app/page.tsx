@@ -54,10 +54,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center font-sans">
-      {/* Barra de Navegación */}
+    <div className="flex flex-col min-h-screen items-center justify-center font-sans bg-white dark:bg-black">
       <header className="fixed top-0 z-50 w-full bg-black border-b backdrop-blur-md">
-        <div className="relative max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="relative w-full px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="hover:opacity-80 transition-opacity">
             <Image
@@ -84,22 +83,23 @@ export default function Home() {
         {/* Sección 1 - Maquillaje */}
         <div
           className="bg-[url(/images/pictures/lp_maquillaje_1.png)] bg-cover bg-center bg-no-repeat
-          w-full h-svh flex flex-col justify-center items-center gap-10"
+          w-full h-svh flex flex-col justify-center items-center gap-10 relative"
         >
+          <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
           {/* Red social */}
-          <p className="text-xl text-black/90 dark:text-white/90">
+          <p className="text-xl text-black/90 dark:text-white/90 z-10">
             @FOTOPOSEVMAKEUP
           </p>
 
           {/* Titulo de la sección */}
-          <h1 className="text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
+          <h1 className="text-3xl lg:text-5xl font-bold text-center text-black dark:text-white z-10">
             Cursos de maquillaje profesional
           </h1>
 
           {/* botones de enrrutado */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
             <button
-              className="min-w-40 rounded-xl p-2 bg-black text-shadow-white hover:bg-white hover:text-black
+              className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
             >
               Inscribirse
@@ -116,20 +116,24 @@ export default function Home() {
         {/* Sección 2 - Modelaje */}
         <div
           className="bg-[url(/images/pictures/lp_modelaje_1.png)] bg-cover bg-center bg-no-repeat
-          w-full h-svh flex flex-col justify-center items-center gap-10"
+          w-full h-svh flex flex-col justify-center items-center gap-10 relative"
         >
+          <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
           {/* Titulo de la sección */}
-          <h1 className="text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
+          <h1 className="text-3xl lg:text-5xl font-bold text-center text-black dark:text-white z-10">
             Curso de Modelaje Profesional
           </h1>
 
           {/* Red social */}
-          <p className="text-xl text-black/90 dark:text-white/90">@FOTOPOSEV</p>
+          <p className="text-xl text-black/90 dark:text-white/90 z-10">
+            @FOTOPOSEV
+          </p>
 
           {/* botones de enrrutado */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
             <button
-              className="min-w-40 rounded-xl p-2 bg-black text-shadow-white hover:bg-white hover:text-black
+              className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
             >
               Postularse
@@ -146,29 +150,31 @@ export default function Home() {
         {/* Sección 3 - Servicios */}
         <div
           className="bg-[url(/images/pictures/lp_servicios_1.png)] bg-cover bg-center bg-no-repeat
-          w-full h-svh flex flex-col justify-center items-center gap-10"
+          w-full h-svh flex flex-col justify-center items-center gap-10 relative"
         >
+          <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
           {/* Titulo de la sección */}
-          <h1 className="text-4xl lg:text-5xl font-bold text-center text-black dark:text-white">
+          <h1 className="text-3xl lg:text-5xl font-bold text-center text-black dark:text-white z-10">
             Contrata nuestros servicios
           </h1>
 
           {/* botones de enrrutado */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-5">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
             <button
-              className="min-w-40 rounded-xl p-2 bg-black text-shadow-white hover:bg-white hover:text-black
+              className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
             >
               Belleza
             </button>
             <button
-              className="min-w-40 rounded-xl p-2 bg-black text-shadow-white hover:bg-white hover:text-black
+              className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
             >
               Modelos
             </button>
             <button
-              className="min-w-40 rounded-xl p-2 bg-black text-shadow-white hover:bg-white hover:text-black
+              className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white"
             >
               Fotografia
@@ -184,12 +190,13 @@ export default function Home() {
               className="bg-[url(/images/pictures/lp_marketing_1.png)] bg-cover bg-center bg-no-repeat
               relative flex flex-col gap-2 p-10 w-full aspect-square rounded-xl shadow-2xl"
             >
-              <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
+              <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/60 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
-              <p className="text-xl font-bold z-10">
+              <p className="text-2xl lg:text-4xl font-bold z-10">
                 Curso de Marketing Personalizado
               </p>
-              <p className="text-lg text-black/90 dark:text-white/90 z-10">
+
+              <p className="text-xl text-black/90 dark:text-white/90 z-10">
                 Aprende Justo lo que necesitas praa tus objetivos
               </p>
             </div>
@@ -199,63 +206,72 @@ export default function Home() {
               className="bg-[url(/images/pictures/lp_cejas_1.png)] bg-cover bg-center bg-no-repeat
               relative flex flex-col gap-2 p-10 w-full aspect-square rounded-xl shadow-2xl"
             >
-              <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
-              <p className="text-xl font-bold z-10">
+              <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/60 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
+              <p className="text-2xl lg:text-4xl font-bold z-10">
                 Cursos de Cejas y pestañas
               </p>
-              <p className="text-lg text-black/90 dark:text-white/90 z-10">
+
+              <p className="text-xl text-black/90 dark:text-white/90 z-10">
                 Call out a feature, benefit, or value that can stand on its own.
               </p>
             </div>
           </div>
 
           <div className="flex flex-col gap-5 lg:gap-10 lg:w-1/2">
-            {/* Curso de Marketing */}
+            {/* Curso de Modelaje personalizado */}
             <div
               className="bg-[url(/images/pictures/lp_modelaje_2.png)] bg-cover bg-center bg-no-repeat
               relative flex flex-col gap-2 p-10 w-full lg:h-full aspect-square lg:aspect-auto rounded-xl shadow-2xl"
             >
-              <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
-              <p className="text-xl font-bold z-10">
-                Curso de Marketing Personalizado
+              <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-b from-white/60 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
+              <p className="text-2xl lg:text-4xl font-bold z-10">
+                CURSOS PERSONALIZADOS DE FOTO POSE
               </p>
-              <p className="text-lg text-black/90 dark:text-white/90 z-10">
-                Aprende Justo lo que necesitas praa tus objetivos
+
+              <p className="text-xl text-black/90 dark:text-white/90 z-10">
+                HERRAMIENTAS PARA CUALQUIER PROFESION U OFICIO
               </p>
             </div>
           </div>
         </div>
 
         {/* Sección 5 - Nosotros */}
-        <div className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10">
+        <div className="flex flex-col w-full p-5 gap-5 lg:p-10 lg:gap-10 rounded-2xl">
           <div
             className="bg-[url(/images/pictures/lp_nosotros_1.png)] bg-cover bg-center bg-no-repeat
-            relative flex flex-col gap-2 p-10 w-full aspect-square lg:aspect-video rounded-xl shadow-2xl"
+            relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
           >
-            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
-            <p className="text-xl font-bold z-10">
+            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
+            <p className="text-2xl lg:text-4xl font-bold z-10">
               Curso de Marketing Personalizado
             </p>
-            <p className="text-lg text-black/90 dark:text-white/90 z-10">
+
+            <p className="text-xl text-black/90 dark:text-white/90 z-10">
               Aprende Justo lo que necesitas praa tus objetivos
             </p>
           </div>
+
           <div
             className="bg-[url(/images/pictures/lp_nosotros_2.png)] bg-cover bg-center bg-no-repeat
-            relative flex flex-col gap-2 p-10 w-full aspect-square lg:aspect-video rounded-xl shadow-2xl"
+            relative flex flex-col justify-end gap-2 p-10 w-full lg:h-96 aspect-square lg:aspect-auto rounded-2xl shadow-2xl"
           >
-            <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/80 to-white/10"></div>
-            <p className="text-xl font-bold z-10">
+            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
+
+            <p className="text-2xl lg:text-4xl font-bold z-10">
               Curso de Marketing Personalizado
             </p>
-            <p className="text-lg text-black/90 dark:text-white/90 z-10">
+
+            <p className="text-xl text-black/90 dark:text-white/90 z-10">
               Aprende Justo lo que necesitas praa tus objetivos
             </p>
           </div>
         </div>
       </main>
 
-      <footer className="w-full px-10 pb-30 flex justify-between">
+      <footer className="w-full px-10 pb-30 flex flex-col md:flex-row justify-between">
         {/* Contacto */}
         <div className="flex flex-col gap-5">
           <h1 className="text-2xl">Fotopose</h1>
@@ -315,7 +331,7 @@ export default function Home() {
         </div>
 
         {/* Navegacion */}
-        <div className="flex justify-end gap-5 px-20">
+        <div className="flex justify-end gap-5 md:px-20">
           {/* Cursos */}
           <ul className="flex flex-col gap-3">
             <li>
