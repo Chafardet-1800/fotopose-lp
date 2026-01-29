@@ -1,4 +1,4 @@
-import CourseView from "@/src/components/courses/CourseView";
+import CourseView from "@/src/components/courses/information/CourseView";
 import { COURSES_DATA } from "@/src/data/courses/courses_data";
 
 type CourseType = "marketing" | "modeling" | "aesthetics" | "photography";
