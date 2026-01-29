@@ -326,6 +326,7 @@ export default function AestheticsInscriptionView() {
         </div>
       </section>
 
+      {/* Acordion de puntos fuertes */}
       <section className="flex flex-col gap-10 lg:px-20">
         <h2 className="text-4xl font-bold lg:px-20">La mejor propuesta</h2>
 
