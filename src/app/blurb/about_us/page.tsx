@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function AboutUsPage() {
   return (
     <main className="flex flex-col items-center gap-20 py-25 w-full">
+      {/* Imagen de cabezera con titulo */}
       <div className="w-full h-[80vh] flex flex-col justify-center items-center gap-10 relative">
         {/* Imagen de Fondo */}
         <Image

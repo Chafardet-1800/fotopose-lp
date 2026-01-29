@@ -75,7 +75,7 @@ export default function Home() {
           {/* botones de enrrutado */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-5 z-10">
             <Link
-              href="/course?type=modeling"
+              href="/course/registration?type=modeling"
               className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
             >
