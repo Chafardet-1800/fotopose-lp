@@ -26,7 +26,7 @@ export default function CourseCarousel({
   };
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[88vh] overflow-hidden">
       {/* Contenedor de Slides con Transición */}
       <div
         className="flex w-full h-full transition-transform duration-500 ease-in-out"
@@ -39,7 +39,7 @@ export default function CourseCarousel({
               src={course.image}
               alt={course.title}
               fill
-              className="object-cover brightness-50" // Oscurecemos para que el texto resalte
+              className="object-cover brightness-80" // Oscurecemos para que el texto resalte
               priority={index === currentIndex} // Solo carga prioridad al actual
             />
 
@@ -59,14 +59,14 @@ export default function CourseCarousel({
       {/* Botones de Navegación */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full text-black/40  hover:text-black dark:text-white/40  dark:hover:text-white transition"
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full text-white/40  hover:text-white dark:text-white/40  dark:hover:text-white transition"
       >
         <ChevronLeft size={32} />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full text-black/40  hover:text-black dark:text-white/40  dark:hover:text-white transition"
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full text-white/40  hover:text-white dark:text-white/40  dark:hover:text-white transition"
       >
         <ChevronRight size={32} />
       </button>

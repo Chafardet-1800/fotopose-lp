@@ -2,28 +2,30 @@ import Image from "next/image";
 
 export default function MakeupDetail() {
   return (
-    <div className="flex-col gap-15 pb-25">
+    <div className="flex-col gap-18 pb-25">
       {/* Seccion de maquillaje */}
-      <section className="flex flex-1 flex-col gap-15 items-center">
+      <section className="flex flex-1 flex-col gap-18 mt-20 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Domina el arte de la belleza y transforma tu pasión en una carrera
+          profesional.
         </h2>
 
         {/* Slider lateral a la derecha */}
-        <div className="w-full h-[60vh] lg:h-[70vh] flex items-center gap-5 overflow-x-scroll scroll-hidden">
+        <div className="w-full h-[60vh] lg:h-[73vh] flex items-center gap-5 overflow-x-scroll scroll-hidden">
+          {/* Tarjeta 1 */}
           <div
-            className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
+            className="relative flex flex-col justify-between min-w-[70%] max-w-[70%] ms-20 p-3 sm:p-10
                 aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
           >
             <Image
-              src="/images/pictures/lp_cejas_1.png"
-              alt="Desfiles de moda FOTOPOSEV"
+              src="/images/pictures/mi_makeup_2.png"
+              alt="Maquilladora profesional"
               fill
               className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
             />
 
             {/* Degradado */}
-            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/10 to-white/45 dark:from-black/80 dark:to-white/10"></div>
 
             {/* Contenido */}
             <div className="flex flex-col gap-2 z-10">
@@ -45,19 +47,21 @@ export default function MakeupDetail() {
               Inscribirme
             </button>
           </div>
+
+          {/* Tarjeta 2 */}
           <div
-            className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
+            className="relative flex flex-col justify-between min-w-[70%] max-w-[70%] ms-5 p-3 sm:p-10
                 aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
           >
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_3.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
             />
 
             {/* Degradado */}
-            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/10 to-white/45 dark:from-black/80 dark:to-white/10"></div>
 
             {/* Contenido */}
             <div className="flex flex-col gap-2 z-10">
@@ -79,8 +83,10 @@ export default function MakeupDetail() {
               Inscribirme
             </button>
           </div>
+
+          {/* Tarjeta 3 */}
           <div
-            className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
+            className="relative flex flex-col justify-between min-w-[70%] max-w-[70%] ms-5 p-3 sm:p-10
                 aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
           >
             <Image
@@ -91,7 +97,7 @@ export default function MakeupDetail() {
             />
 
             {/* Degradado */}
-            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/10 to-white/45 dark:from-black/80 dark:to-white/10"></div>
 
             {/* Contenido */}
             <div className="flex flex-col gap-2 z-10">
@@ -113,8 +119,10 @@ export default function MakeupDetail() {
               Inscribirme
             </button>
           </div>
+
+          {/* Tarjeta 4 */}
           <div
-            className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
+            className="relative flex flex-col justify-between min-w-[70%] max-w-[70%] ms-5 p-3 sm:p-10
                 aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
           >
             <Image
@@ -125,7 +133,7 @@ export default function MakeupDetail() {
             />
 
             {/* Degradado */}
-            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+            <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-black/10 to-white/45 dark:from-black/80 dark:to-white/10"></div>
 
             {/* Contenido */}
             <div className="flex flex-col gap-2 z-10">
@@ -151,9 +159,9 @@ export default function MakeupDetail() {
       </section>
 
       {/* Segmento de pestañás */}
-      <section className="flex flex-col gap-15 items-center">
+      <section className="flex flex-col gap-18 mt-20 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Extensiones y Lifting de Pestañas
         </h2>
 
         {/* Contenido dividido */}
@@ -169,7 +177,7 @@ export default function MakeupDetail() {
 
           <div className="relative w-[80%] mx-auto aspect-square lg:w-full lg:max-w-[70%] lg:aspect-auto">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_4.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
@@ -180,14 +188,14 @@ export default function MakeupDetail() {
         {/* Contenido apilado */}
         <div className="flex flex-col gap-5 w-full min-h-[70vh]">
           <p className="text-lg sm:text-xl font-bold text-center lg:w-[70%] mx-auto px-10 lg:p-0">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-            consectetur, eum ex ut dignissimos magnam illo cupiditate aliquid
-            repudiandae blanditiis inventore vel voluptatum soluta nobis harum
-            deleniti earum odit ipsa?
+            Especialízate en la técnica de aplicación pelo a pelo y volumen
+            ruso. Aprenderás el manejo seguro de adhesivos, curvaturas y
+            longitudes para crear miradas impactantes con acabados profesionales
+            y duraderos.
           </p>
           <div className="relative h-[80vh] w-[80%] mx-auto aspect-square lg:w-full lg:max-w-[70%] lg:aspect-auto">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_5.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
@@ -197,16 +205,16 @@ export default function MakeupDetail() {
       </section>
 
       {/* Segmento de Cejas */}
-      <section className="flex flex-col gap-15 items-center">
+      <section className="flex flex-col gap-18 mt-20 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Diseño y Perfilado de Cejas Profesional
         </h2>
 
         {/* Contenido dividido */}
         <div className="flex flex-col-reverse justify-between lg:flex-row gap-5 w-full min-h-[70vh]">
           <div className="relative w-[80%] mx-auto aspect-square lg:w-full lg:max-w-[70%] lg:aspect-auto">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_6.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="absolute object-cover rounded-2xl lg:rounded-bl-none lg:rounded-tl-none"
@@ -215,10 +223,10 @@ export default function MakeupDetail() {
 
           <div className="w-full lg:max-w-[70%] flex flex-col justify-center px-10">
             <p className="text-lg sm:text-xl font-bold text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-              consectetur, eum ex ut dignissimos magnam illo cupiditate aliquid
-              repudiandae blanditiis inventore vel voluptatum soluta nobis harum
-              deleniti earum odit ipsa?
+              Aprende a transformar miradas a través del diseño de cejas
+              personalizado. En este curso dominarás la visagismo, depilación
+              técnica y la aplicación de Henna para lograr resultados definidos
+              y naturales que tus clientes amarán.
             </p>
           </div>
         </div>
@@ -232,7 +240,7 @@ export default function MakeupDetail() {
           </p>
           <div className="relative h-[80vh] w-[80%] mx-auto aspect-square lg:w-full lg:max-w-[70%] lg:aspect-auto">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_7.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
@@ -242,25 +250,25 @@ export default function MakeupDetail() {
       </section>
 
       {/* Segmento de Depilacion */}
-      <section className="flex flex-col gap-15 items-center">
+      <section className="flex flex-col gap-18 mt-20 items-center">
         <h2 className="text-3xl font-bold text-black dark:text-white text-center max-w-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Informacion del curso de depilacion
         </h2>
 
         {/* Contenido dividido */}
         <div className="flex flex-col-reverse justify-between lg:flex-row gap-5 w-full min-h-[70vh]">
           <div className="w-full lg:max-w-[70%] flex flex-col justify-center px-10">
             <p className="text-lg sm:text-xl font-bold text-center">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-              consectetur, eum ex ut dignissimos magnam illo cupiditate aliquid
-              repudiandae blanditiis inventore vel voluptatum soluta nobis harum
-              deleniti earum odit ipsa?
+              Domina las técnicas de depilación más eficaces y menos dolorosas.
+              Te enseñamos el manejo de diferentes tipos de cera, cuidados de la
+              piel pre y post depilación, y protocolos de higiene para ofrecer
+              un servicio de alta calidad
             </p>
           </div>
 
           <div className="relative w-[80%] mx-auto aspect-square lg:w-full lg:max-w-[70%] lg:aspect-auto">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_8.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
@@ -271,14 +279,14 @@ export default function MakeupDetail() {
         {/* Contenido apilado */}
         <div className="flex flex-col gap-5 w-full min-h-[70vh]">
           <p className="text-lg sm:text-xl font-bold text-center lg:w-[70%] mx-auto px-10 lg:p-0">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-            consectetur, eum ex ut dignissimos magnam illo cupiditate aliquid
-            repudiandae blanditiis inventore vel voluptatum soluta nobis harum
-            deleniti earum odit ipsa?
+            Domina las técnicas de depilación más eficaces y menos dolorosas. Te
+            enseñamos el manejo de diferentes tipos de cera, cuidados de la piel
+            pre y post depilación, y protocolos de higiene para ofrecer un
+            servicio de alta calidad
           </p>
           <div className="relative h-[80vh] w-[80%] mx-auto aspect-square lg:w-full lg:max-w-[70%] lg:aspect-auto">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/mi_makeup_9.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
               className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"

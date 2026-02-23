@@ -102,7 +102,7 @@ export default function RootLayout({
 
         {children}
 
-        <footer className="w-full px-10 pb-30 flex flex-col md:flex-row justify-between">
+        <footer className="w-full px-10 pb-20 flex flex-col md:flex-row justify-between">
           {/* Contacto */}
           <div className="flex flex-col gap-5 mb-10 md:mb-0">
             <h1 className="text-2xl">Fotopose</h1>
