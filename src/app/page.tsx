@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col bg-slate-50 dark:bg-[#000000] selection:bg-red-900 selection:text-white pb-15">
       {/* --- SECCIÓN 1: MAQUILLAJE (HERO PRINCIPAL) --- */}
-      <section className="relative pt-20 w-full h-screen max-w-350 mx-auto group">
+      <section className="relative pt-20 w-full h-screen mx-auto group">
         <div className="relative w-full h-full overflow-hidden shadow-2xl border border-slate-200/50 dark:border-gray-800">
           <Image
             src="/images/pictures/lp_maquillaje_1.png"
@@ -45,7 +45,7 @@ export default function Home() {
       </section>
 
       {/* --- SECCIÓN 2: MODELAJE --- */}
-      <section className="relative h-screen w-full max-w-350 mx-auto">
+      <section className="relative h-screen w-full mx-auto">
         <div className="relative w-full h-full overflow-hidden shadow-2xl border border-slate-200/50 dark:border-gray-800 group">
           <Image
             src="/images/pictures/lp_modelaje_1.png"
