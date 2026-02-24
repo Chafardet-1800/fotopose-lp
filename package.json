@@ -1,6 +1,6 @@
 {
   "name": "fotopose-lp",
-  "version": "0.1.024",
+  "version": "0.1.025",
   "private": true,
   "scripts": {
     "dev": "next dev",

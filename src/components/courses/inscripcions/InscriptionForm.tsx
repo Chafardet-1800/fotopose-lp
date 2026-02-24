@@ -132,7 +132,7 @@ export default function InscriptionForm({
         <h2 className="text-lg font-black text-black dark:text-white">
           Formulario de Inscripción
         </h2>
-        <p className="mt-2 text-sm text-black dark:text-white">
+        <p className="mt-2 text-sm text-black dark:text-slate-400">
           Completa tus datos para registrarte en el curso.
         </p>
       </div>

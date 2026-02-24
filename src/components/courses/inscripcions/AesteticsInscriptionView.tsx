@@ -27,22 +27,6 @@ export default function AestheticsInscriptionView() {
 
   return (
     <div className="flex flex-col pt-20 bg-white dark:bg-[#000000] selection:bg-red-900 selection:text-white pb-24">
-      {/* --- HERO SECTION --- */}
-      {/* <section className="relative flex flex-col items-center justify-center pt-32 pb-16 px-6 overflow-hidden bg-linear-to-b from-red-50/50 to-white dark:from-red-950/20 dark:to-black">
-        <div className="max-w-4xl text-center z-10 flex flex-col items-center gap-6">
-          <h2 className="text-sm font-bold tracking-widest text-red-800 dark:text-red-600 uppercase">
-            Catálogo de Formación
-          </h2>
-          <h1 className="text-2xl md:text-6xl lg:text-4xl font-black tracking-tighter text-slate-900 dark:text-white leading-[1.1]">
-            Cursos de Maquillaje Profesional.
-          </h1>
-          <p className="text-lg md:text-xl font-medium text-slate-500 dark:text-slate-400 max-w-2xl mt-2">
-            Selecciona el programa que mejor se adapte a tus metas y comienza tu
-            camino en el mundo de la belleza.
-          </p>
-        </div>
-      </section> */}
-
       {/* --- SLIDER DE CURSOS (Selector) --- */}
       <section className="pb-12 bg-white dark:bg-black overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-8">
@@ -78,14 +62,14 @@ export default function AestheticsInscriptionView() {
                   </h3>
                   {/* Radio Button Customizado */}
                   <div
-                    className={`shrink-0 flex items-center justify-center w-6 h-6 rounded-sm border-2 transition-colors ${
+                    className={`shrink-0 flex items-center justify-center w-6 h-6 rounded-full border-2 transition-colors ${
                       currentIndex === index
                         ? "bg-red-600 border-red-600"
                         : "border-white/70 bg-black/20 backdrop-blur-sm"
                     }`}
                   >
                     {currentIndex === index && (
-                      <div className="w-2.5 h-2.5 bg-white rounded-sm"></div>
+                      <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
                     )}
                   </div>
                 </div>
@@ -245,7 +229,7 @@ export default function AestheticsInscriptionView() {
 
           {/* Columna Derecha: Formulario */}
           <div className="lg:col-span-7">
-            <div className="sticky top-22 bg-white dark:bg-[#111111] rounded-[2.5rem] shadow-xl border border-slate-100 dark:border-gray-800 p-2 overflow-hidden">
+            <div className="sticky top-22 bg-white dark:bg-[#111111] rounded-[2.5rem] shadow-xl border border-slate-100 dark:border-gray-800 p-4 overflow-hidden">
               <InscriptionForm
                 availableDates={currentCourse.availableDates}
                 className=""

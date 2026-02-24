@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Camera, Star, User, Quote } from "lucide-react";
+import { Camera, Star, User } from "lucide-react";
 import InscriptionForm from "./InscriptionForm";
 
 export default function ModelingInscriptionView() {
@@ -38,7 +38,7 @@ export default function ModelingInscriptionView() {
       {/* --- PENSUM (BENTO GRID STYLE) --- */}
       <section className="py-24 px-6 bg-slate-50 dark:bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-3xl md:text-xl font-black tracking-tight text-slate-900 dark:text-white">
               Plan de Estudios Integral.
             </h2>
@@ -55,13 +55,36 @@ export default function ModelingInscriptionView() {
                 <User size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
-                Pasarela y Postura
+                Modelaje Comercial
               </h3>
-              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
-                Domina el escenario con seguridad. Aprenderás técnicas de
-                caminata, postura, giros y expresión corporal para deslumbrar en
-                desfiles de alta costura.
-              </p>
+              <div className="flex flex-col gap-3 text-start">
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Conecta con la audiencia y vende con tu imagen. Aquí te
+                  preparamos para el mundo de la publicidad, televisión y
+                  catálogos. El enfoque es la versatilidad:
+                </p>
+                <ul className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm">
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Expresión facial y manejo de emociones frente a la cámara.
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Técnicas de acting para comerciales de TV.
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Posado natural para catálogos y campañas de marcas
+                      comerciales.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Módulo 2 */}
@@ -70,13 +93,36 @@ export default function ModelingInscriptionView() {
                 <Camera size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
-                Fotopose y Actuación
+                Modelaje Editorial
               </h3>
-              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
-                Conoce tus mejores ángulos. Domina la interacción con los
-                fotógrafos, el uso de la iluminación y técnicas de actuación
-                para comerciales.
-              </p>
+              <div className="flex flex-col gap-3 text-start">
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Convierte la moda en una obra de arte. Ideal para quienes
+                  buscan aparecer en revistas y proyectos de vanguardia. Nos
+                  enfocamos en la creatividad:
+                </p>
+                <ul className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm">
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Creación de líneas corporales y poses
+                      artísticas/abstractas.
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Interpretación de conceptos y narrativas visuales.
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Manejo de ángulos para fotografía de High Fashion.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Módulo 3 */}
@@ -87,18 +133,41 @@ export default function ModelingInscriptionView() {
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
                 Etiqueta y Protocolo
               </h3>
-              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
-                La verdadera elegancia se nota en los detalles. Te enseñamos las
-                normas de comportamiento en eventos sociales, entrevistas y
-                relaciones públicas.
-              </p>
+              <div className="flex flex-col gap-3 text-start">
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                  Domina el escenario con cada paso. En este módulo aprenderás
+                  las técnicas fundamentales para desfilar con seguridad y
+                  elegancia. Trabajamos en:
+                </p>
+                <ul className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm">
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Postura corporal y alineación.
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Diferentes tipos de caminata (alta costura vs.
+                      pret-a-porter).
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
+                    <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                      Giros, tiempos y manejo de prendas complejas en escena.
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* --- FORMULARIO DE INSCRIPCIÓN --- */}
-      <section className="py-24 px-6 bg-white dark:bg-black">
+      <section className="pb-10 px-6 bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
           {/* Texto y CTA */}
           <div className="lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
@@ -133,7 +202,7 @@ export default function ModelingInscriptionView() {
       </section>
 
       {/* --- CASOS DE ÉXITO (CARRUSEL PREMIUM) --- */}
-      <section className="py-24 bg-slate-50 dark:bg-[#0a0a0a] overflow-hidden">
+      <section className="pb-10 bg-slate-50 dark:bg-[#0a0a0a] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-12 text-center md:text-left">
           <h2 className="text-3xl md:text-2xl font-black tracking-tight text-slate-900 dark:text-white">
             Casos de Éxito.
@@ -145,11 +214,11 @@ export default function ModelingInscriptionView() {
         </div>
 
         {/* Carrusel Horizontal (Snap) */}
-        <div className="flex gap-6 overflow-x-auto pb-10 px-6 max-w-7xl mx-auto snap-x snap-mandatory custom-scrollbar">
+        <div className="flex gap-6 overflow-x-auto scroll-hidden pb-10 px-6 max-w-7xl mx-auto snap-x snap-mandatory custom-scrollbar">
           {/* Tarjeta de Éxito 1 */}
           <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/ins_modeling_ej_1.png"
               alt="Caso de éxito 1"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -158,11 +227,9 @@ export default function ModelingInscriptionView() {
             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
 
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
               <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
-                {`"`}Gracias a la academia perdí el miedo escénico. Hoy trabajo
-                con marcas increíbles y acabo de firmar con mi primera agencia
-                internacional.{`"`}
+                Nuestro Top Model @eduinsilva en las vallas publicitarias de
+                Caracas para @estivaneli.vzla
               </p>
               <div className="border-t border-white/20 pt-4">
                 <p className="text-white font-bold">María Valentina</p>
@@ -174,7 +241,7 @@ export default function ModelingInscriptionView() {
           {/* Tarjeta de Éxito 2 */}
           <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/ins_modeling_ej_2.png"
               alt="Caso de éxito 2"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -183,11 +250,8 @@ export default function ModelingInscriptionView() {
             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
 
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
               <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
-                {`"`}Blanditiis, vel aperiam? Quod repudiandae, accusantium
-                facere rem et suscipit voluptate voluptatum molestias. ¡Una
-                experiencia transformadora!{`"`}
+                Nuestra modelo @marianyiarocha para la marca @amaryyaaa
               </p>
               <div className="border-t border-white/20 pt-4">
                 <p className="text-white font-bold">Ana Sofía</p>
@@ -199,7 +263,7 @@ export default function ModelingInscriptionView() {
           {/* Tarjeta de Éxito 3 */}
           <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/ins_modeling_ej_3.png"
               alt="Caso de éxito 3"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -208,11 +272,9 @@ export default function ModelingInscriptionView() {
             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
 
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
               <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
-                {`"`}Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                El nivel de exigencia y las clases de fotopose fueron claves
-                para mi portafolio.{`"`}
+                Nuestro modelo @anyarens_27 en #Mexico para lo nuevo de la marca
+                @cuidadoconelperromx
               </p>
               <div className="border-t border-white/20 pt-4">
                 <p className="text-white font-bold">Camila Andrea</p>
@@ -224,7 +286,7 @@ export default function ModelingInscriptionView() {
           {/* Tarjeta de Éxito 4 */}
           <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
             <Image
-              src="/images/pictures/lp_cejas_1.png"
+              src="/images/pictures/ins_modeling_ej_4.png"
               alt="Caso de éxito 4"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -233,11 +295,9 @@ export default function ModelingInscriptionView() {
             <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
 
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
               <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
-                {`"`}Quod repudiandae, accusantium facere rem et suscipit
-                voluptate voluptatum. La mejor decisión para iniciar mi carrera
-                en la moda.{`"`}
+                Nuestro modelo @jhoivernavarro_v para lo nuevo de la marca
+                @zapativoss
               </p>
               <div className="border-t border-white/20 pt-4">
                 <p className="text-white font-bold">Valeria</p>
