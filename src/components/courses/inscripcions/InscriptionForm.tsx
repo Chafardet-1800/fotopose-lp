@@ -15,6 +15,7 @@ import { sendRegistrationEmail } from "@/src/app/actions/sendEmail";
 
 interface Prom {
   availableDates: { schedules: string; month: string }[];
+  className: string | undefined;
 }
 
 export interface formDataInterface {
@@ -30,7 +31,10 @@ export interface formDataInterface {
   location: string;
 }
 
-export default function InscriptionForm({ availableDates }: Prom) {
+export default function InscriptionForm({
+  availableDates,
+  className = "",
+}: Prom) {
   // Estado general del formulario
   const [formData, setFormData] = useState<formDataInterface>({
     fullName: "",
@@ -121,7 +125,9 @@ export default function InscriptionForm({ availableDates }: Prom) {
   };
 
   return (
-    <div className="mx-auto flex flex-col h-full w-full relative">
+    <div
+      className={"mx-auto flex flex-col h-full w-full relative " + className}
+    >
       <div className="mb-3 text-center">
         <h2 className="text-lg font-black text-black dark:text-white">
           Formulario de Inscripción

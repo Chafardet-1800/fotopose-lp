@@ -47,7 +47,7 @@ export default async function ForumPage() {
         <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
         {/* Titulo de la sección */}
-        <p className="text-3xl lg:text-5xl font-bold text-center text-black dark:text-white z-10">
+        <p className="text-3xl lg:text-2xl font-bold text-center text-black dark:text-white z-10">
           No mantenemos en movimiento
         </p>
       </div>

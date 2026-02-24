@@ -45,7 +45,7 @@ export default function CourseCarousel({
 
             {/* Texto sobre la imagen (Título Principal) */}
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in-up">
+              <h1 className="text-2xl md:text-4xl font-bold text-white mb-4 animate-fade-in-up">
                 {course.title}
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl">

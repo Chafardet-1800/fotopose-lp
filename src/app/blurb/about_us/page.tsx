@@ -17,7 +17,7 @@ export default function AboutUsPage() {
         <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
 
         {/* Titulo de la sección */}
-        <p className="text-3xl lg:text-5xl font-bold text-center text-black dark:text-white z-10">
+        <p className="text-3xl lg:text-2xl font-bold text-center text-black dark:text-white z-10">
           Creemos en ti
         </p>
         {/* Red social */}
@@ -44,7 +44,7 @@ export default function AboutUsPage() {
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
-            <p className="text-lg sm:text-4xl font-bold">
+            <p className="text-lg sm:text-xl font-bold">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
 
@@ -78,7 +78,7 @@ export default function AboutUsPage() {
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
-            <p className="text-lg sm:text-4xl font-bold">
+            <p className="text-lg sm:text-xl font-bold">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
 
@@ -112,7 +112,7 @@ export default function AboutUsPage() {
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
-            <p className="text-lg sm:text-4xl font-bold">
+            <p className="text-lg sm:text-xl font-bold">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
 
@@ -146,7 +146,7 @@ export default function AboutUsPage() {
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
-            <p className="text-lg sm:text-4xl font-bold">
+            <p className="text-lg sm:text-xl font-bold">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
 

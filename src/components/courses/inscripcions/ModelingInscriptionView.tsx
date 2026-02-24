@@ -1,285 +1,259 @@
+"use client";
 import Image from "next/image";
+import { Camera, Star, User, Quote } from "lucide-react";
 import InscriptionForm from "./InscriptionForm";
 
 export default function ModelingInscriptionView() {
   return (
-    <main className="flex flex-col items-center gap-15 py-20 px-5 lg:px-0">
-      {/* Imagen de cabezera con titulo */}
-      <div className="w-full h-[80vh] flex flex-col justify-center items-center gap-10 relative">
-        {/* Imagen de Fondo */}
-        <Image
-          src="/images/pictures/lp_maquillaje_1.png"
-          alt="Cusos de maquillaje profesional"
-          fill
-          className="object-cover brightness-80" // Oscurecemos para que el texto resalte
-        />
-
-        <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
-
-        {/* Titulo de la sección */}
-        <p className="text-3xl lg:text-5xl font-bold text-center text-black dark:text-white z-10">
-          Un modelo completo
-        </p>
-      </div>
-
-      {/* Pensum */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center justify-center lg:px-20">
-        <div className="flex flex-col gap-5">
-          <p className="text-2xl w-full text-center border-b border-black dark:border-white">
-            Lorem ipsum
-          </p>
-          <p className="text-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            voluptas unde recusandae ipsa! Dolorem, exercitationem ab sint
-            doloribus labore perspiciatis consequatur? Alias ipsa minima quidem
-            recusandae itaque! Libero, odit excepturi? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Aliquam incidunt cum
-            voluptatibus, maxime dignissimos, voluptates odit voluptatem
-            laudantium debitis hic, dolorum doloremque porro velit? Reiciendis,
-            officiis deserunt? Doloremque, perferendis sapiente!
+    <div className="flex flex-col bg-white dark:bg-[#000000] selection:bg-red-900 selection:text-white pb-24">
+      {/* --- HERO SECTION --- */}
+      <section className="relative w-full h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-linear-to-b from-red-50/50 to-white dark:from-red-950/20 dark:to-black">
+        {/* Encabezado principal */}
+        <div className="max-w-4xl text-center z-10 flex flex-col items-center gap-6">
+          <h2 className="text-sm font-bold tracking-widest text-red-800 dark:text-red-600 uppercase">
+            Inscripción Academia
+          </h2>
+          <h1 className="text-2xl md:text-6xl lg:text-4xl font-black tracking-tighter text-slate-900 dark:text-white leading-[1.1]">
+            Un modelo completo.
+          </h1>
+          <p className="text-lg md:text-xl font-medium text-slate-500 dark:text-slate-400 max-w-2xl mt-2">
+            Fórmate como modelo profesional desde cero. Desarrolla tu seguridad,
+            domina las pasarelas y proyecta una imagen integral impecable.
           </p>
         </div>
-        <div className="flex flex-col gap-5">
-          <p className="text-2xl w-full text-center border-b border-black dark:border-white">
-            Lorem ipsum
-          </p>
-          <p className="text-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            voluptas unde recusandae ipsa! Dolorem, exercitationem ab sint
-            doloribus labore perspiciatis consequatur? Alias ipsa minima quidem
-            recusandae itaque! Libero, odit excepturi? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Aliquam incidunt cum
-            voluptatibus, maxime dignissimos, voluptates odit voluptatem
-            laudantium debitis hic, dolorum doloremque porro velit? Reiciendis,
-            officiis deserunt? Doloremque, perferendis sapiente!
-          </p>
+
+        {/* Imagen Hero Flotante */}
+        <div className="absolute mt-20 w-full h-full aspect-video md:aspect-21/9 overflow-hidden shadow-2xl shadow-black/10 border border-slate-100 dark:border-gray-800">
+          <Image
+            src="/images/pictures/mi_modelaje_2.png"
+            alt="Modelo profesional FOTOPOSEV"
+            fill
+            className="object-cover transition-transform duration-700 hover:scale-105"
+            priority
+          />
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent pointer-events-none"></div>
         </div>
-        <div className="flex flex-col gap-5">
-          <p className="text-2xl w-full text-center border-b border-black dark:border-white">
-            Lorem ipsum
-          </p>
-          <p className="text-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-            voluptas unde recusandae ipsa! Dolorem, exercitationem ab sint
-            doloribus labore perspiciatis consequatur? Alias ipsa minima quidem
-            recusandae itaque! Libero, odit excepturi? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Aliquam incidunt cum
-            voluptatibus, maxime dignissimos, voluptates odit voluptatem
-            laudantium debitis hic, dolorum doloremque porro velit? Reiciendis,
-            officiis deserunt? Doloremque, perferendis sapiente!
-          </p>
-        </div>
-      </div>
-
-      {/* Formulario */}
-      <div className="w-full h-screen flex flex-col justify-center items-center gap-10 relative">
-        {/* Imagen de Fondo */}
-        <Image
-          src="/images/pictures/lp_maquillaje_1.png"
-          alt="Cusos de maquillaje profesional"
-          fill
-          className="object-cover brightness-80" // Oscurecemos para que el texto resalte
-        />
-
-        <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10 "></div>
-
-        <InscriptionForm />
-      </div>
-
-      {/* Seccion de maquillaje */}
-      <section className="w-full flex flex-col gap-15 px-5 lg:px-0">
-        <h2 className="text-3xl font-bold text-black dark:text-white lg:px-20">
-          Casos de exito
-        </h2>
-
-        {/* Slider lateral a la derecha */}
-        <div className="w-full flex items-center gap-5 overflow-x-scroll scroll-hidden">
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full lg:ms-20">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-          {/* Contenido */}
-          <div className="flex flex-col gap-2 min-w-[70%] max-w-[70%] lg:min-w-[30%] lg:max-w-[30%] h-full">
-            {/* Imagen */}
-            <div
-              className="relative flex flex-col justify-between
-              aspect-[1/1.5] rounded-2xl shadow-xl"
-            >
-              <Image
-                src="/images/pictures/lp_cejas_1.png"
-                alt="Desfiles de moda FOTOPOSEV"
-                fill
-                className="object-cover rounded-2xl" // Oscurecemos para que el texto resalte
-              />
-            </div>
-            {/* Descripcion */}
-            <p className="text-sm sm:text-lg text-black/90 dark:text-white/90">
-              Blanditiis, vel aperiam? Quod repudiandae, accusantium facere rem
-              et suscipit voluptate voluptatum molestias
-            </p>
-          </div>
-        </div>
-
-        <p className="w-full text-center text-4xl">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        </p>
       </section>
-    </main>
+
+      {/* --- PENSUM (BENTO GRID STYLE) --- */}
+      <section className="py-24 px-6 bg-slate-50 dark:bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-xl font-black tracking-tight text-slate-900 dark:text-white">
+              Plan de Estudios Integral.
+            </h2>
+            <p className="mt-4 text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+              Nuestra metodología te prepara para destacar en todas las facetas
+              de la industria de la moda y la publicidad.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Módulo 1 */}
+            <div className="bg-white dark:bg-[#111111] p-10 rounded-4xl border border-slate-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-center text-center">
+              <div className="h-16 w-16 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-500 rounded-full flex items-center justify-center mb-6">
+                <User size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
+                Pasarela y Postura
+              </h3>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                Domina el escenario con seguridad. Aprenderás técnicas de
+                caminata, postura, giros y expresión corporal para deslumbrar en
+                desfiles de alta costura.
+              </p>
+            </div>
+
+            {/* Módulo 2 */}
+            <div className="bg-white dark:bg-[#111111] p-10 rounded-4xl border border-slate-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-center text-center">
+              <div className="h-16 w-16 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-500 rounded-full flex items-center justify-center mb-6">
+                <Camera size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
+                Fotopose y Actuación
+              </h3>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                Conoce tus mejores ángulos. Domina la interacción con los
+                fotógrafos, el uso de la iluminación y técnicas de actuación
+                para comerciales.
+              </p>
+            </div>
+
+            {/* Módulo 3 */}
+            <div className="bg-white dark:bg-[#111111] p-10 rounded-4xl border border-slate-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-center text-center">
+              <div className="h-16 w-16 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-500 rounded-full flex items-center justify-center mb-6">
+                <Star size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
+                Etiqueta y Protocolo
+              </h3>
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
+                La verdadera elegancia se nota en los detalles. Te enseñamos las
+                normas de comportamiento en eventos sociales, entrevistas y
+                relaciones públicas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- FORMULARIO DE INSCRIPCIÓN --- */}
+      <section className="py-24 px-6 bg-white dark:bg-black">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+          {/* Texto y CTA */}
+          <div className="lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
+            <h2 className="text-3xl md:text-2xl font-black tracking-tight text-slate-900 dark:text-white leading-tight">
+              Da el primer paso hacia <br className="hidden lg:block" /> las
+              pasarelas.
+            </h2>
+            <p className="text-lg text-slate-500 dark:text-slate-400 max-w-xl mx-auto lg:mx-0">
+              Completa el formulario para reservar tu cupo en nuestra próxima
+              cohorte. Te guiaremos en cada paso para que construyas un
+              portafolio profesional y una carrera sólida.
+            </p>
+            <div className="mt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 font-medium">
+                <div className="w-2 h-2 rounded-full bg-red-700"></div> Clases
+                presenciales
+              </div>
+              <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 font-medium">
+                <div className="w-2 h-2 rounded-full bg-red-700"></div>
+                Portafolio Profesional
+              </div>
+            </div>
+          </div>
+
+          {/* Contenedor del Formulario */}
+          <div className="w-full lg:w-1/2">
+            <div className="bg-slate-50 dark:bg-[#111111] rounded-[2.5rem] shadow-2xl border border-slate-200 dark:border-gray-800 p-2 overflow-hidden">
+              <InscriptionForm availableDates={[]} className="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- CASOS DE ÉXITO (CARRUSEL PREMIUM) --- */}
+      <section className="py-24 bg-slate-50 dark:bg-[#0a0a0a] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-12 text-center md:text-left">
+          <h2 className="text-3xl md:text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+            Casos de Éxito.
+          </h2>
+          <p className="mt-4 text-lg text-slate-500 dark:text-slate-400 max-w-2xl">
+            Nuestros egresados hoy brillan en desfiles de alta costura, portadas
+            de revistas y certámenes internacionales.
+          </p>
+        </div>
+
+        {/* Carrusel Horizontal (Snap) */}
+        <div className="flex gap-6 overflow-x-auto pb-10 px-6 max-w-7xl mx-auto snap-x snap-mandatory custom-scrollbar">
+          {/* Tarjeta de Éxito 1 */}
+          <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
+            <Image
+              src="/images/pictures/lp_cejas_1.png"
+              alt="Caso de éxito 1"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            {/* Degradado oscuro para lectura */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
+
+            <div className="absolute inset-0 p-8 flex flex-col justify-end">
+              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
+              <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
+                {`"`}Gracias a la academia perdí el miedo escénico. Hoy trabajo
+                con marcas increíbles y acabo de firmar con mi primera agencia
+                internacional.{`"`}
+              </p>
+              <div className="border-t border-white/20 pt-4">
+                <p className="text-white font-bold">María Valentina</p>
+                <p className="text-xs text-white/60">Modelo Editorial</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tarjeta de Éxito 2 */}
+          <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
+            <Image
+              src="/images/pictures/lp_cejas_1.png"
+              alt="Caso de éxito 2"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            {/* Degradado oscuro para lectura */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
+
+            <div className="absolute inset-0 p-8 flex flex-col justify-end">
+              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
+              <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
+                {`"`}Blanditiis, vel aperiam? Quod repudiandae, accusantium
+                facere rem et suscipit voluptate voluptatum molestias. ¡Una
+                experiencia transformadora!{`"`}
+              </p>
+              <div className="border-t border-white/20 pt-4">
+                <p className="text-white font-bold">Ana Sofía</p>
+                <p className="text-xs text-white/60">Miss y Modelo Comercial</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tarjeta de Éxito 3 */}
+          <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
+            <Image
+              src="/images/pictures/lp_cejas_1.png"
+              alt="Caso de éxito 3"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            {/* Degradado oscuro para lectura */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
+
+            <div className="absolute inset-0 p-8 flex flex-col justify-end">
+              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
+              <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
+                {`"`}Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                El nivel de exigencia y las clases de fotopose fueron claves
+                para mi portafolio.{`"`}
+              </p>
+              <div className="border-t border-white/20 pt-4">
+                <p className="text-white font-bold">Camila Andrea</p>
+                <p className="text-xs text-white/60">Modelo de Pasarela</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Tarjeta de Éxito 4 */}
+          <div className="group relative shrink-0 w-[75vw] sm:w-87.5 aspect-3/4 rounded-4xl overflow-hidden shadow-sm border border-slate-200 dark:border-gray-800 snap-center cursor-pointer">
+            <Image
+              src="/images/pictures/lp_cejas_1.png"
+              alt="Caso de éxito 4"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            {/* Degradado oscuro para lectura */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
+
+            <div className="absolute inset-0 p-8 flex flex-col justify-end">
+              <Quote className="text-red-500 mb-3 opacity-80" size={24} />
+              <p className="text-sm md:text-base text-white/90 mb-4 font-medium leading-relaxed">
+                {`"`}Quod repudiandae, accusantium facere rem et suscipit
+                voluptate voluptatum. La mejor decisión para iniciar mi carrera
+                en la moda.{`"`}
+              </p>
+              <div className="border-t border-white/20 pt-4">
+                <p className="text-white font-bold">Valeria</p>
+                <p className="text-xs text-white/60">Talento FOTOPOSEV</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mensaje de cierre sutil */}
+        <div className="mt-12 text-center px-6">
+          <p className="text-2xl md:text-3xl font-medium text-slate-800 dark:text-slate-200">
+            Tú puedes ser nuestra próxima gran historia.
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }
