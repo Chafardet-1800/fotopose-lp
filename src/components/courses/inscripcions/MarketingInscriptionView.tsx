@@ -61,7 +61,7 @@ export default function MarketingInscriptionView() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Módulo 1 */}
             <div className="bg-white dark:bg-[#111111] p-10 rounded-4xl border border-slate-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-center text-center">
-              <div className="h-16 w-16 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center mb-6">
+              <div className="h-16 w-16 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-sm flex items-center justify-center mb-6">
                 <Target size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
@@ -76,7 +76,7 @@ export default function MarketingInscriptionView() {
 
             {/* Módulo 2 */}
             <div className="bg-white dark:bg-[#111111] p-10 rounded-4xl border border-slate-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-center text-center">
-              <div className="h-16 w-16 bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 rounded-full flex items-center justify-center mb-6">
+              <div className="h-16 w-16 bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 rounded-sm flex items-center justify-center mb-6">
                 <Smartphone size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
@@ -91,7 +91,7 @@ export default function MarketingInscriptionView() {
 
             {/* Módulo 3 */}
             <div className="bg-white dark:bg-[#111111] p-10 rounded-4xl border border-slate-200 dark:border-gray-800 shadow-sm hover:shadow-lg transition-shadow flex flex-col items-center text-center">
-              <div className="h-16 w-16 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 rounded-full flex items-center justify-center mb-6">
+              <div className="h-16 w-16 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 rounded-sm flex items-center justify-center mb-6">
                 <TrendingUp size={32} />
               </div>
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
@@ -123,11 +123,11 @@ export default function MarketingInscriptionView() {
             </p>
             <div className="mt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 font-medium">
-                <div className="w-2 h-2 rounded-full bg-emerald-500"></div>{" "}
-                Clases en vivo
+                <div className="w-2 h-2 rounded-sm bg-emerald-500"></div> Clases
+                en vivo
               </div>
               <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300 font-medium">
-                <div className="w-2 h-2 rounded-full bg-emerald-500"></div>{" "}
+                <div className="w-2 h-2 rounded-sm bg-emerald-500"></div>{" "}
                 Certificado Avalado
               </div>
             </div>

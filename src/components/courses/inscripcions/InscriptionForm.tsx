@@ -160,7 +160,7 @@ export default function InscriptionForm({
                 placeholder="Ej. Juan Pérez"
                 value={formData.fullName}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:ring-1 focus:ring-black focus:outline-none dark:1 dark:focus:ring-white dark:border-white dark:bg-black dark:text-white"
+                className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:ring-1 focus:ring-black focus:outline-none dark:1 dark:focus:ring-white dark:border-white dark:bg-black dark:text-white"
               />
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function InscriptionForm({
                   placeholder="V-12345678"
                   value={formData.idCard}
                   onChange={handleChange}
-                  className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                  className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
                 />
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function InscriptionForm({
                 placeholder="Ej. 25"
                 value={formData.age}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
               />
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function InscriptionForm({
                   placeholder="0414-1234567"
                   value={formData.phone1}
                   onChange={handleChange}
-                  className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                  className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
                 />
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function InscriptionForm({
                   placeholder="0412-7654321"
                   value={formData.phone2}
                   onChange={handleChange}
-                  className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                  className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
                 />
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function InscriptionForm({
                 placeholder="correo@ejemplo.com"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
               />
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function InscriptionForm({
                 placeholder="Ej. Chacao, Caracas"
                 value={formData.location}
                 onChange={handleChange}
-                className="w-full rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                className="w-full rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
               />
             </div>
           </div>
@@ -313,7 +313,7 @@ export default function InscriptionForm({
                   required
                   value={formData.month}
                   onChange={handleChange}
-                  className="w-full appearance-none rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                  className="w-full appearance-none rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
                 >
                   <option value="" disabled>
                     Selecciona el mes
@@ -343,7 +343,7 @@ export default function InscriptionForm({
                   disabled={!formData.month} // Se deshabilita si no hay mes seleccionado
                   value={formData.schedule}
                   onChange={handleChange}
-                  className="w-full appearance-none rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm disabled:cursor-not-allowed disabled:opacity-50 focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
+                  className="w-full appearance-none rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm disabled:cursor-not-allowed disabled:opacity-50 focus:border-black focus:outline-none dark:focus:border-white dark:border-white dark:bg-black dark:text-white"
                 >
                   <option value="" disabled>
                     {formData.month
@@ -379,7 +379,7 @@ export default function InscriptionForm({
                 value={formData.schedule}
                 onChange={handleChange}
                 // Las clases mágicas están al final de este className
-                className="w-full appearance-none rounded-lg border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:border-white dark:bg-black dark:text-white dark:focus:border-white [&::-webkit-calendar-picker-indicator]:cursor-pointer dark:[&::-webkit-calendar-picker-indicator]:invert"
+                className="w-full appearance-none rounded-sm border border-slate-300 bg-slate-50 p-2.5 pl-10 text-sm focus:border-black focus:outline-none dark:border-white dark:bg-black dark:text-white dark:focus:border-white [&::-webkit-calendar-picker-indicator]:cursor-pointer dark:[&::-webkit-calendar-picker-indicator]:invert"
               />
             </div>
           </div>
@@ -390,7 +390,7 @@ export default function InscriptionForm({
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full text-md rounded-xl py-2 bg-red-900 text-white hover:bg-red-800 text-center font-bold"
+            className="w-full text-md rounded-sm py-2 bg-red-900 text-white hover:bg-red-800 text-center font-bold"
           >
             {isSubmitting ? "Enviando datos..." : "Completar Inscripción"}
           </button>
@@ -400,9 +400,9 @@ export default function InscriptionForm({
       {/* --- MODAL DE ÉXITO --- */}
       {showSuccess && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="w-full max-w-sm scale-100 transform rounded-2xl bg-white p-8 text-center shadow-2xl transition-all dark:bg-black animate-in zoom-in-95 duration-200">
+          <div className="w-full max-w-sm scale-100 transform rounded-sm bg-white p-8 text-center shadow-2xl transition-all dark:bg-black animate-in zoom-in-95 duration-200">
             {/* Icono de Check */}
-            <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 dark:bg-emerald-900/30">
+            <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-sm bg-emerald-100 dark:bg-emerald-900/30">
               <CheckCircle2 className="h-10 w-10 text-emerald-600 dark:text-emerald-400" />
             </div>
 
@@ -418,7 +418,7 @@ export default function InscriptionForm({
             {/* Botón Cerrar */}
             <button
               onClick={() => setShowSuccess(false)}
-              className="w-full rounded-xl bg-slate-800 px-4 py-3 font-bold text-white transition-colors hover:bg-red-800 dark:bg-red-800 dark:hover:bg-red-600"
+              className="w-full rounded-sm bg-slate-800 px-4 py-3 font-bold text-white transition-colors hover:bg-red-800 dark:bg-red-800 dark:hover:bg-red-600"
             >
               Entendido
             </button>

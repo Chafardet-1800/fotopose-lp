@@ -22,7 +22,7 @@ export default function ModelingDetail() {
           <div className="mt-4">
             <Link
               href="/course/registration?type=modeling"
-              className="inline-block rounded-full bg-red-900 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-red-800 hover:scale-105 shadow-lg shadow-red-900/30"
+              className="inline-block rounded-sm bg-red-900 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-red-800 hover:scale-105 shadow-lg shadow-red-900/30"
             >
               Inscribirse ahora
             </Link>
@@ -30,7 +30,7 @@ export default function ModelingDetail() {
         </div>
 
         {/* Imagen Hero Flotante */}
-        <div className="relative mt-20 w-full max-w-5xl aspect-video md:aspect-21/9 rounded-3xl overflow-hidden shadow-2xl shadow-black/10 border border-slate-100 dark:border-gray-800">
+        <div className="relative mt-20 w-full max-w-5xl aspect-video md:aspect-21/9 rounded-sm overflow-hidden shadow-2xl shadow-black/10 border border-slate-100 dark:border-gray-800">
           <Image
             src="/images/pictures/mi_modelaje_2.png"
             alt="Modelo profesional FOTOPOSEV"
@@ -129,7 +129,7 @@ export default function ModelingDetail() {
               </p>
               <Link
                 href="/course/registration?type=modeling"
-                className="w-fit rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-6 py-2 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black"
+                className="w-fit rounded-sm bg-white/20 backdrop-blur-md border border-white/30 px-6 py-2 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black"
               >
                 Inscribirme
               </Link>
@@ -156,7 +156,7 @@ export default function ModelingDetail() {
               </p>
               <Link
                 href="/course/registration?type=modeling"
-                className="w-fit rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-6 py-2 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black"
+                className="w-fit rounded-sm bg-white/20 backdrop-blur-md border border-white/30 px-6 py-2 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black"
               >
                 Inscribirme
               </Link>
@@ -183,7 +183,7 @@ export default function ModelingDetail() {
               </p>
               <Link
                 href="/course/registration?type=modeling"
-                className="w-fit rounded-full bg-white/20 backdrop-blur-md border border-white/30 px-6 py-2 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black"
+                className="w-fit rounded-sm bg-white/20 backdrop-blur-md border border-white/30 px-6 py-2 text-sm font-bold text-white transition-colors hover:bg-white hover:text-black"
               >
                 Inscribirme
               </Link>
@@ -289,7 +289,7 @@ export default function ModelingDetail() {
         </h2>
         <Link
           href="/course/registration?type=modeling"
-          className="inline-flex items-center justify-center rounded-full bg-red-900 dark:bg-red-800 text-white px-10 py-4 text-lg font-bold transition-transform hover:scale-105 shadow-lg shadow-red-900/20"
+          className="inline-flex items-center justify-center rounded-sm bg-red-900 dark:bg-red-800 text-white px-10 py-4 text-lg font-bold transition-transform hover:scale-105 shadow-lg shadow-red-900/20"
         >
           Únete a la academia
         </Link>

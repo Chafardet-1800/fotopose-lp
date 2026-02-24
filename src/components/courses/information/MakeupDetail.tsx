@@ -21,7 +21,7 @@ export default function MakeupDetail() {
           <div className="mt-4">
             <Link
               href="/course/registration?type=aesthetics"
-              className="inline-block rounded-full bg-red-900 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-red-800 hover:scale-105 shadow-lg shadow-red-900/30"
+              className="inline-block rounded-sm bg-red-900 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-red-800 hover:scale-105 shadow-lg shadow-red-900/30"
             >
               Inscribirse ahora
             </Link>
@@ -229,36 +229,36 @@ export default function MakeupDetail() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[200px] md:auto-rows-[300px]">
             {/* Foto ancha */}
-            <div className="relative col-span-2 md:col-span-2 rounded-3xl overflow-hidden">
+            <div className="relative col-span-2 md:col-span-2 rounded-sm overflow-hidden">
               <Image
-                src="/images/pictures/mi_makeup_11.png"
+                src="/images/pictures/mi_makeup_1.png"
                 alt="Backstage 1"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             {/* Foto alta */}
-            <div className="relative row-span-2 rounded-3xl overflow-hidden hidden md:block">
+            <div className="relative row-span-2 rounded-sm overflow-hidden hidden md:block">
               <Image
-                src="/images/pictures/mi_makeup_12.png"
+                src="/images/pictures/mi_makeup_1.png"
                 alt="Backstage 2"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             {/* Foto normal */}
-            <div className="relative rounded-3xl overflow-hidden">
+            <div className="relative rounded-sm overflow-hidden">
               <Image
-                src="/images/pictures/mi_makeup_13.png"
+                src="/images/pictures/mi_makeup_1.png"
                 alt="Backstage 3"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             {/* Foto normal */}
-            <div className="relative rounded-3xl overflow-hidden">
+            <div className="relative rounded-sm overflow-hidden">
               <Image
-                src="/images/pictures/mi_makeup_14.png"
+                src="/images/pictures/mi_makeup_1.png"
                 alt="Backstage 4"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-500"
@@ -356,7 +356,7 @@ export default function MakeupDetail() {
         </h2>
         <Link
           href="/course/registration?type=aesthetics"
-          className="inline-flex items-center justify-center rounded-full bg-red-900 dark:bg-red-800 text-white px-10 py-4 text-lg font-bold transition-transform hover:scale-105 shadow-lg shadow-red-900/20"
+          className="inline-flex items-center justify-center rounded-sm bg-red-900 dark:bg-red-800 text-white px-10 py-4 text-lg font-bold transition-transform hover:scale-105 shadow-lg shadow-red-900/20"
         >
           Inscríbete hoy
         </Link>

@@ -78,14 +78,14 @@ export default function AestheticsInscriptionView() {
                   </h3>
                   {/* Radio Button Customizado */}
                   <div
-                    className={`shrink-0 flex items-center justify-center w-6 h-6 rounded-full border-2 transition-colors ${
+                    className={`shrink-0 flex items-center justify-center w-6 h-6 rounded-sm border-2 transition-colors ${
                       currentIndex === index
                         ? "bg-red-600 border-red-600"
                         : "border-white/70 bg-black/20 backdrop-blur-sm"
                     }`}
                   >
                     {currentIndex === index && (
-                      <div className="w-2.5 h-2.5 bg-white rounded-full"></div>
+                      <div className="w-2.5 h-2.5 bg-white rounded-sm"></div>
                     )}
                   </div>
                 </div>
@@ -181,21 +181,21 @@ export default function AestheticsInscriptionView() {
               </p>
               <ul className="flex flex-col gap-3 text-slate-600 dark:text-slate-300 text-sm">
                 <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-800 shrink-0"></div>
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
                   <p>
                     Todos nuestros cursos son evaluados del 1 a 10, por lo tanto
                     para aprobar tu nota debe ser superior a 7 pts.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-800 shrink-0"></div>
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
                   <p>
                     Los profesores responderán a sus inquietudes y asignaciones
                     en horario limitado.
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-800 shrink-0"></div>
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
                   <p>
                     Si desea adquirir algún producto o herramienta por medio de
                     nuestros proveedores de confianza{" "}
@@ -211,7 +211,7 @@ export default function AestheticsInscriptionView() {
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-800 shrink-0"></div>
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
                   <p>
                     En caso de faltar tu modelo a las prácticas o de
                     inasistencia deberás recuperar la clase. El costo de la
@@ -219,7 +219,7 @@ export default function AestheticsInscriptionView() {
                   </p>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-red-800 shrink-0"></div>
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-sm bg-red-800 shrink-0"></div>
                   <p>
                     Si no cuentas con modelos puedes solicitar una modelo de la
                     academia por un costo de 10$ o al cambio por clase.
@@ -236,7 +236,7 @@ export default function AestheticsInscriptionView() {
                   `${currentCourse.title} - Lista de materiales.jpeg`,
                 )
               }
-              className="flex items-center justify-center gap-2 w-full md:w-auto bg-slate-900 dark:bg-white text-white dark:text-black font-bold py-4 px-8 rounded-full transition-transform hover:scale-105 shadow-lg"
+              className="flex items-center justify-center gap-2 w-full md:w-auto bg-slate-900 dark:bg-white text-white dark:text-black font-bold py-4 px-8 rounded-sm transition-transform hover:scale-105 shadow-lg"
             >
               <Download size={18} />
               Descargar lista de materiales

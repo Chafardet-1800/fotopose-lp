@@ -36,7 +36,7 @@ function NavItem({ title, items }: { title: string; items: MenuItem[] }) {
             <Link
               key={item.slug}
               href={`${item.href}?type=${item.slug}`}
-              className="p-4 rounded-lg hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-100"
+              className="p-4 rounded-sm hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-100"
             >
               <span className="text-sm font-semibold text-gray-900">
                 {item.label}

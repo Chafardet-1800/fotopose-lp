@@ -29,13 +29,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link
                 href="/course/registration?type=aesthetics"
-                className="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-slate-200 transition-colors shadow-xl"
+                className="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-sm font-bold hover:bg-slate-200 transition-colors shadow-xl"
               >
                 Inscribirse
               </Link>
               <Link
                 href="/course?type=aesthetics"
-                className="flex items-center justify-center gap-2 bg-black/40 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-colors"
+                className="flex items-center justify-center gap-2 bg-black/40 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-sm font-bold hover:bg-white/20 transition-colors"
               >
                 Más información
               </Link>
@@ -66,13 +66,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link
                 href="/course/registration?type=modeling"
-                className="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-slate-200 transition-colors shadow-xl"
+                className="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-sm font-bold hover:bg-slate-200 transition-colors shadow-xl"
               >
                 Postularse
               </Link>
               <Link
                 href="/course?type=modeling"
-                className="flex items-center justify-center gap-2 bg-black/40 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-colors"
+                className="flex items-center justify-center gap-2 bg-black/40 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-sm font-bold hover:bg-white/20 transition-colors"
               >
                 Más información
               </Link>
@@ -99,13 +99,13 @@ export default function Home() {
 
             {/* Botones estilo Glassmorphism */}
             <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto max-w-3xl">
-              <button className="flex-1 px-8 py-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
+              <button className="flex-1 px-8 py-5 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
                 Salón de Belleza
               </button>
-              <button className="flex-1 px-8 py-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
+              <button className="flex-1 px-8 py-5 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
                 Agencia Modelos
               </button>
-              <button className="flex-1 px-8 py-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
+              <button className="flex-1 px-8 py-5 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
                 Estudio Fotografía
               </button>
             </div>

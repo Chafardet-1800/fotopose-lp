@@ -65,7 +65,7 @@ export default async function ForumPage() {
 
             <div
               className="relative w-full h-full p-10 flex justify-center items-center
-            bg-black dark:bg-white rounded-2xl shadow-2xl"
+            bg-black dark:bg-white rounded-sm shadow-2xl"
             >
               <p className="text-white dark:text-black text-lg sm:text-xl font-bold text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
@@ -86,7 +86,7 @@ export default async function ForumPage() {
               src={post.image}
               alt={post.title}
               fill
-              className={`absolute object-cover rounded-2xl ${index % 2 === 0 ? "lg:rounded-br-none lg:rounded-tr-none" : "lg:rounded-bl-none lg:rounded-tl-none"}`}
+              className={`absolute object-cover rounded-sm ${index % 2 === 0 ? "lg:rounded-br-none lg:rounded-tr-none" : "lg:rounded-bl-none lg:rounded-tl-none"}`}
             />
           </div>
         </section>

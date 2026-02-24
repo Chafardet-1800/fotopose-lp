@@ -24,7 +24,7 @@ export default function MarketingDetail() {
           <div className="mt-4">
             <Link
               href="/course/registration?type=marketing"
-              className="inline-block rounded-full bg-red-600 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-red-700 hover:scale-105 shadow-lg shadow-red-500/30"
+              className="inline-block rounded-sm bg-red-600 px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-red-700 hover:scale-105 shadow-lg shadow-red-500/30"
             >
               Inscribirse ahora
             </Link>
@@ -32,7 +32,7 @@ export default function MarketingDetail() {
         </div>
 
         {/* Imagen Hero (Flotante) */}
-        <div className="relative mt-20 w-full max-w-5xl aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-black/10 border border-slate-100 dark:border-gray-800">
+        <div className="relative mt-20 w-full max-w-5xl aspect-video rounded-sm overflow-hidden shadow-2xl shadow-black/10 border border-slate-100 dark:border-gray-800">
           <Image
             src="/images/pictures/mi_marketing_2.png"
             alt="Curso de marketing FOTOPOSEV"
@@ -86,7 +86,7 @@ export default function MarketingDetail() {
               </p>
             </div>
             {/* Imagen de la Card 1 */}
-            <div className="relative w-full aspect-square md:aspect-video mt-10 rounded-2xl overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <div className="relative w-full aspect-square md:aspect-video mt-10 rounded-sm overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
               <Image
                 src="/images/pictures/mi_marketing_3.png"
                 alt="Clases prácticas"
@@ -108,7 +108,7 @@ export default function MarketingDetail() {
               </p>
             </div>
             {/* Imagen de la Card 2 */}
-            <div className="relative w-full aspect-square md:aspect-video mt-10 rounded-2xl overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+            <div className="relative w-full aspect-square md:aspect-video mt-10 rounded-sm overflow-hidden translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
               <Image
                 src="/images/pictures/mi_marketing_3.png"
                 alt="Actualización constante"
@@ -127,7 +127,7 @@ export default function MarketingDetail() {
         </h2>
         <Link
           href="/course/registration?type=marketing"
-          className="inline-flex items-center justify-center rounded-full bg-slate-900 dark:bg-white text-white dark:text-black px-10 py-4 text-lg font-bold transition-transform hover:scale-105"
+          className="inline-flex items-center justify-center rounded-sm bg-slate-900 dark:bg-white text-white dark:text-black px-10 py-4 text-lg font-bold transition-transform hover:scale-105"
         >
           Inscríbete hoy
         </Link>

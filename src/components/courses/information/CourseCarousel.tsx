@@ -59,14 +59,14 @@ export default function CourseCarousel({
       {/* Botones de Navegación */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full text-white/40  hover:text-white dark:text-white/40  dark:hover:text-white transition"
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-sm text-white/40  hover:text-white dark:text-white/40  dark:hover:text-white transition"
       >
         <ChevronLeft size={32} />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full text-white/40  hover:text-white dark:text-white/40  dark:hover:text-white transition"
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-sm text-white/40  hover:text-white dark:text-white/40  dark:hover:text-white transition"
       >
         <ChevronRight size={32} />
       </button>
@@ -77,7 +77,7 @@ export default function CourseCarousel({
           <button
             key={idx}
             onClick={() => onChange(idx)}
-            className={`w-3 h-3 rounded-full transition-all ${
+            className={`w-3 h-3 rounded-sm transition-all ${
               idx === currentIndex ? "bg-white w-8" : "bg-white/50"
             }`}
           />

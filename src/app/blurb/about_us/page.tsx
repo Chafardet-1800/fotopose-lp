@@ -30,17 +30,17 @@ export default function AboutUsPage() {
       <section className="w-full h-[60vh] lg:h-[70vh] flex items-center gap-5 overflow-x-scroll scroll-hidden">
         <div
           className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
-                  aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
+                  aspect-square sm:aspect-2/1 rounded-sm shadow-xl"
         >
           <Image
             src="/images/pictures/lp_cejas_1.png"
             alt="Desfiles de moda FOTOPOSEV"
             fill
-            className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+            className="object-cover brightness-80 rounded-sm" // Oscurecemos para que el texto resalte
           />
 
           {/* Degradado */}
-          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+          <div className="rounded-sm absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
@@ -56,7 +56,7 @@ export default function AboutUsPage() {
 
           {/* Botón */}
           <button
-            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
+            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-sm p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
                   dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white z-10"
           >
             Inscribirme
@@ -64,17 +64,17 @@ export default function AboutUsPage() {
         </div>
         <div
           className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
-                  aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
+                  aspect-square sm:aspect-2/1 rounded-sm shadow-xl"
         >
           <Image
             src="/images/pictures/lp_cejas_1.png"
             alt="Desfiles de moda FOTOPOSEV"
             fill
-            className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+            className="object-cover brightness-80 rounded-sm" // Oscurecemos para que el texto resalte
           />
 
           {/* Degradado */}
-          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+          <div className="rounded-sm absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
@@ -90,7 +90,7 @@ export default function AboutUsPage() {
 
           {/* Botón */}
           <button
-            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
+            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-sm p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
                   dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white z-10"
           >
             Inscribirme
@@ -98,17 +98,17 @@ export default function AboutUsPage() {
         </div>
         <div
           className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
-                  aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
+                  aspect-square sm:aspect-2/1 rounded-sm shadow-xl"
         >
           <Image
             src="/images/pictures/lp_cejas_1.png"
             alt="Desfiles de moda FOTOPOSEV"
             fill
-            className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+            className="object-cover brightness-80 rounded-sm" // Oscurecemos para que el texto resalte
           />
 
           {/* Degradado */}
-          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+          <div className="rounded-sm absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
@@ -124,7 +124,7 @@ export default function AboutUsPage() {
 
           {/* Botón */}
           <button
-            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
+            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-sm p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
                   dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white z-10"
           >
             Inscribirme
@@ -132,17 +132,17 @@ export default function AboutUsPage() {
         </div>
         <div
           className="relative flex flex-col justify-between min-w-[80%] max-w-[80%] ms-5 p-3 sm:p-10
-                  aspect-square sm:aspect-2/1 rounded-2xl shadow-xl"
+                  aspect-square sm:aspect-2/1 rounded-sm shadow-xl"
         >
           <Image
             src="/images/pictures/lp_cejas_1.png"
             alt="Desfiles de moda FOTOPOSEV"
             fill
-            className="object-cover brightness-80 rounded-2xl" // Oscurecemos para que el texto resalte
+            className="object-cover brightness-80 rounded-sm" // Oscurecemos para que el texto resalte
           />
 
           {/* Degradado */}
-          <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
+          <div className="rounded-sm absolute top-0 left-0 w-full h-full bg-linear-to-t from-white/80 to-black/10 dark:from-black/80 dark:to-white/10"></div>
 
           {/* Contenido */}
           <div className="flex flex-col gap-2 z-10">
@@ -158,7 +158,7 @@ export default function AboutUsPage() {
 
           {/* Botón */}
           <button
-            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
+            className="w-40 mx-auto lg:m-0 lg:ms-auto rounded-sm p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
                   dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white z-10"
           >
             Inscribirme
@@ -188,7 +188,7 @@ export default function AboutUsPage() {
               src="/images/pictures/lp_cejas_1.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
-              className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
+              className="absolute object-cover rounded-sm lg:rounded-br-none lg:rounded-tr-none"
             />
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function AboutUsPage() {
               src="/images/pictures/lp_cejas_1.png"
               alt="Desfiles de moda FOTOPOSEV"
               fill
-              className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
+              className="absolute object-cover rounded-sm lg:rounded-br-none lg:rounded-tr-none"
             />
           </div>
           <p className="text-lg sm:text-xl font-bold text-center lg:w-[70%] mx-auto px-10 lg:p-0">
@@ -214,7 +214,7 @@ export default function AboutUsPage() {
           </p>
           <div className="flex gap-3">
             {/* Instagram */}
-            <button className="rounded-full p-0 cursor-pointer">
+            <button className="rounded-sm p-0 cursor-pointer">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -230,7 +230,7 @@ export default function AboutUsPage() {
             </button>
 
             {/* Facebook */}
-            <button className="rounded-full p-0 cursor-pointer">
+            <button className="rounded-sm p-0 cursor-pointer">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -246,7 +246,7 @@ export default function AboutUsPage() {
             </button>
 
             {/* Twitter */}
-            <button className="rounded-full p-0 cursor-pointer">
+            <button className="rounded-sm p-0 cursor-pointer">
               <svg
                 role="img"
                 viewBox="0 0 24 24"
@@ -275,7 +275,7 @@ export default function AboutUsPage() {
 
           <div
             className="relative w-full h-full p-10 flex justify-center items-center
-            bg-black dark:bg-white rounded-2xl shadow-2xl"
+            bg-black dark:bg-white rounded-sm shadow-2xl"
           >
             <p className="text-white dark:text-black text-lg sm:text-xl font-bold text-center">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
@@ -296,14 +296,14 @@ export default function AboutUsPage() {
             src="/images/pictures/lp_cejas_1.png"
             alt="Lorem ipsum"
             fill
-            className={`absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none`}
+            className={`absolute object-cover rounded-sm lg:rounded-br-none lg:rounded-tr-none`}
           />
         </div>
       </section>
 
       <Link
         href="/blurb/forum"
-        className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
+        className="min-w-40 rounded-sm p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
              dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white text-center"
       >
         Ver más
