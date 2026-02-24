@@ -25,6 +25,13 @@ export default function MarketingDetail() {
               className="absolute object-cover rounded-2xl lg:rounded-br-none lg:rounded-tr-none"
             />
           </div>
+          <p className="text-lg sm:text-xl font-bold text-center lg:w-[70%] mx-auto px-10 lg:p-0">
+            En el mercado actual, si no te ven, no existes. Nuestro programa
+            está diseñado para que dejes de adivinar qué publicar y comiences a
+            ejecutar estrategias que atraigan clientes reales. Aprenderás a
+            dominar las herramientas que las grandes marcas utilizan para
+            escalar sus ventas y posicionarse como líderes en su sector.
+          </p>
           <Link
             href="/course/registration?type=marketing"
             className="min-w-40 rounded-xl p-2 bg-black text-white text-shadow-white hover:bg-white hover:text-black
@@ -38,11 +45,9 @@ export default function MarketingDetail() {
         <div className="flex flex-col-reverse justify-between lg:flex-row gap-5 w-full min-h-[70vh]">
           <div className="w-full lg:max-w-[70%] flex flex-col justify-center px-10 gap-5">
             <p className="text-lg sm:text-xl font-bold text-center">
-              En el mercado actual, si no te ven, no existes. Nuestro programa
-              está diseñado para que dejes de adivinar qué publicar y comiences
-              a ejecutar estrategias que atraigan clientes reales. Aprenderás a
-              dominar las herramientas que las grandes marcas utilizan para
-              escalar sus ventas y posicionarse como líderes en su sector.
+              Metodología 100% Práctica: Olvídate de la teoría densa; aquí
+              aplicas cada estrategia directamente a tu propio proyecto o
+              negocio desde la primera clase.
             </p>
             <Link
               href="/course/registration?type=marketing"
@@ -86,9 +91,9 @@ export default function MarketingDetail() {
 
           <div className="w-full lg:max-w-[70%] flex flex-col justify-center px-10 gap-5">
             <p className="text-lg sm:text-xl font-bold text-center">
-              Metodología 100% Práctica: Olvídate de la teoría densa; aquí
-              aplicas cada estrategia directamente a tu propio proyecto o
-              negocio desde la primera clase.
+              Actualización de Por Vida: El marketing digital cambia cada
+              semana. Te enseñamos a entender los algoritmos para que tu
+              estrategia nunca quede obsoleta.
             </p>
             <Link
               href="/course/registration?type=marketing"
@@ -99,6 +104,10 @@ export default function MarketingDetail() {
             </Link>
           </div>
         </div>
+
+        <h3 className="text-lg sm:text-xl font-bold text-center">
+          Domina el mercado. ¡inscribete hoy!
+        </h3>
       </section>
     </div>
   );

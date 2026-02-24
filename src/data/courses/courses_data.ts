@@ -25,6 +25,69 @@ export const COURSES_DATA: CourseData[] = [
   },
 ];
 
+export const courses: Course[] = [
+  {
+    title: "Curso básico profesional",
+    description: `
+    Este es un curso de 5 clases, dónde aprenderás los fundamentos para maquillar como toda una profesional a ti y  a otras personas 
+    <b>Importante: 
+    - Debes llevar tus materiales personales desde la primera clase, 
+    - A partir de la clase 3 vas a necesitar llevar modelos al salón para las prácticas 
+    - Tendrás prácticas en el salón y asignaciones para las casa.
+    `,
+    price: "50",
+    offerPrice: {
+      total: 65,
+      init: 20,
+      rest: 45,
+    },
+    availableDates: [
+      { schedules: "Lunes 02 - Viernes 06 (7am - 12pm)", month: "Marzo" },
+      { schedules: "Lunes 02 - Viernes 06 (1pm - 5pm)", month: "Marzo" },
+      { schedules: "Lunes 09 - Viernes 13 (7am - 12pm)", month: "Marzo" },
+      { schedules: "Lunes 09 - Viernes 13 (1pm - 5pm)", month: "Marzo" },
+      { schedules: "Lunes 16 - Viernes 20 (7am - 12pm)", month: "Marzo" },
+      { schedules: "Lunes 16 - Viernes 20 (1pm - 5pm)", month: "Marzo" },
+      { schedules: "Lunes 23 - Viernes 27 (7am - 12pm)", month: "Marzo" },
+      { schedules: "Lunes 23 - Viernes 27 (1pm - 5pm)", month: "Marzo" },
+    ],
+  },
+  {
+    title: "Curso básico profesional VIP",
+    description: `
+    Este es un curso de 5 clases, dónde aprenderás los fundamentos para maquillar como toda una profesional a ti y  a otras personas. Ideal para quienes buscan comodidad y atención más personalizada. 
+    <b>Beneficios especiales: 
+    - Eliges fechas totalmente personalizadas 
+    - A partir de la clase 3 vas a necesitar llevar modelos para las prácticas 
+    - Materiales incluidos para la práctica en salón. 
+    <b>Importante: 
+    - Tendrás prácticas en el salón y asignaciones para las casa.
+    `,
+    price: "50",
+    offerPrice: {
+      total: 65,
+      init: 20,
+      rest: 45,
+    },
+    availableDates: [],
+  },
+];
+
+export type Course = {
+  title: string;
+  description: string;
+  price: string;
+  offerPrice: {
+    total: number;
+    init: number;
+    rest: number;
+  };
+  availableDates: {
+    schedules: string;
+    month: string;
+  }[];
+};
+
 export type CourseData = {
   slug: CourseType;
   title: string;

@@ -20,7 +20,7 @@ function NavItem({ title, items }: { title: string; items: MenuItem[] }) {
   return (
     <div className="group flex items-center h-full">
       {/* Texto Principal */}
-      <button className="text-xl font-medium text-white group-hover:text-2xl transition-colors cursor-pointer">
+      <button className="text-xl font-medium text-white group-hover:text-2xl group-focus:text-2xl transition-colors cursor-pointer">
         {title}
       </button>
 
@@ -28,7 +28,7 @@ function NavItem({ title, items }: { title: string; items: MenuItem[] }) {
       <div
         className="absolute top-20 left-0 w-full bg-white border-b border-gray-200 
                       opacity-0 invisible translate-y-2.5
-                      group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 
+                      group-hover:opacity-100 group-focus:opacity-100 group-hover:visible group-focus:visible group-hover:translate-y-0 group-focus:translate-y-0 
                       transition-all duration-300 ease-out shadow-xl"
       >
         <div className="mx-auto px-10 py-8 grid grid-cols-3 gap-4">
