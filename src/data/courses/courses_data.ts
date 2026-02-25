@@ -40,6 +40,7 @@ export const courses: Course[] = [
       total: 65,
       init: 20,
       rest: 45,
+      coutas: 1,
     },
     availableDates: [
       { schedules: "Lunes 02 - Viernes 06 (7am - 12pm)", month: "Marzo" },
@@ -68,8 +69,35 @@ export const courses: Course[] = [
       total: 65,
       init: 20,
       rest: 45,
+      coutas: 1,
     },
     availableDates: [],
+  },
+  {
+    title: "Diplomado makeup",
+    description: `
+    Es un curso más extenso, dónde incluimos contenido desde lo más básico hasta lo avanzado, en un periodo de 3 Meses, un total de 24 clases. 
+    <b>Importante: 
+    - Algunas clases serán día completo eso se específica cercana la fecha de las mismas.
+    - A partir del  4to  día de clases vas a necesitar llevar modelos para las prácticas. Una vez que te inscribas se te enviará un correo donde se te específicará los días y horarios de cada una.
+    `,
+    price: "250",
+    offerPrice: {
+      total: 280,
+      init: 180,
+      rest: 50,
+      coutas: 2,
+    },
+    availableDates: [
+      {
+        schedules: "apartir del 10, Martes y Jueves (8:30am - 12pm)",
+        month: "Marzo",
+      },
+      {
+        schedules: "apartir del 10, Martes y Jueves (1:30pm - 5pm)",
+        month: "Marzo",
+      },
+    ],
   },
 ];
 
@@ -81,6 +109,7 @@ export type Course = {
     total: number;
     init: number;
     rest: number;
+    coutas: number;
   };
   availableDates: {
     schedules: string;

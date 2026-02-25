@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   User,
   CreditCard,
@@ -52,21 +52,8 @@ export default function InscriptionForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
   // Estado para controlar el diálogo de éxito
   const [showSuccess, setShowSuccess] = useState(false);
-  // Lista de meses
-  const months = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
-  ];
+  // Estado para controlar los meses disponibles por curso
+  const [abilableMonths, SetAbilableMonths] = useState<string[]>([]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
@@ -84,7 +71,20 @@ export default function InscriptionForm({
       const year = new Date().getFullYear();
       const selectedDate = new Date(`${value} ${year}`);
       const monthIndex = selectedDate.getMonth() + 1;
-      const monthName = months[monthIndex - 1];
+      const monthName = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+      ][monthIndex - 1];
       setFormData((prev) => ({ ...prev, month: monthName }));
     }
   };
@@ -123,6 +123,28 @@ export default function InscriptionForm({
       setIsSubmitting(false);
     }
   };
+
+  useEffect(() => {
+    if (availableDates.length) {
+      const aja = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+      ].filter((month) => {
+        return availableDates.some((date) => date.month === month);
+      });
+      SetAbilableMonths(aja);
+    }
+  }, [availableDates]);
 
   return (
     <div
@@ -318,11 +340,12 @@ export default function InscriptionForm({
                   <option value="" disabled>
                     Selecciona el mes
                   </option>
-                  {months.map((m) => (
-                    <option key={m} value={m}>
-                      {m}
-                    </option>
-                  ))}
+                  {abilableMonths.length > 0 &&
+                    abilableMonths.map((m) => (
+                      <option key={m} value={m}>
+                        {m}
+                      </option>
+                    ))}
                 </select>
               </div>
             </div>

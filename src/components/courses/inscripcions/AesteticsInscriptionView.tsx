@@ -36,7 +36,7 @@ export default function AestheticsInscriptionView() {
         </div>
 
         {/* Carrusel Horizontal */}
-        <div className="flex gap-6 overflow-x-auto py-2 px-6 max-w-7xl mx-auto snap-x snap-mandatory custom-scrollbar">
+        <div className="flex scroll-hidden gap-6 overflow-x-auto py-2 px-6 max-w-7xl mx-auto snap-x snap-mandatory custom-scrollbar">
           {courses.map((course, index) => (
             <div
               key={index + course.title}
@@ -149,10 +149,17 @@ export default function AestheticsInscriptionView() {
                       size={16}
                       className="text-red-700 dark:text-red-500"
                     />
-                    <span>
-                      Restante de <b>${currentCourse.offerPrice.rest}</b> el
-                      primer día de clases
-                    </span>
+                    {currentCourse.offerPrice.coutas > 1 ? (
+                      <span>
+                        Restante de <b>${currentCourse.offerPrice.rest}</b> en
+                        un {currentCourse.offerPrice.coutas} cuotas
+                      </span>
+                    ) : (
+                      <span>
+                        Restante de <b>${currentCourse.offerPrice.rest}</b> el
+                        primer día de clases
+                      </span>
+                    )}
                   </li>
                 </ul>
               </div>
