@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -98,15 +97,12 @@ export default function Home() {
             </h2>
 
             {/* Botones estilo Glassmorphism */}
-            <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto max-w-3xl">
+            <div className="flex flex-col md:flex-row gap-4 w-full md:max-w-xl">
               <button className="flex-1 px-8 py-5 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
-                Salón de Belleza
+                Maquillaje
               </button>
               <button className="flex-1 px-8 py-5 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
                 Agencia Modelos
-              </button>
-              <button className="flex-1 px-8 py-5 rounded-sm bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black transition-all shadow-lg hover:-translate-y-1">
-                Estudio Fotografía
               </button>
             </div>
           </div>
@@ -129,18 +125,18 @@ export default function Home() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent pointer-events-none"></div>
 
               <div className="relative z-10">
-                <h3 className="text-3xl md:text-xl font-black text-white leading-tight mb-2">
-                  Marketing <br /> Digital.
+                <h3 className="text-red-500 font-bold tracking-widest uppercase mb-2 text-sm">
+                  Marketing Digital.
                 </h3>
-                <p className="text-white/80 font-medium text-lg flex items-center gap-2">
-                  Ver plan de estudio{" "}
-                  <ArrowRight
-                    size={18}
-                    className="transition-transform group-hover:translate-x-2"
-                  />
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white leading-tight mb-4">
+                  Cursos <br /> Personalizados <br /> de Fotopose.
+                </h3>
+                <p className="text-white/80 font-medium text-lg md:text-xl flex items-center gap-2 max-w-sm">
+                  Herramientas clave para destacar en cualquier profesión u
+                  oficio.
                 </p>
               </div>
             </Link>
@@ -156,18 +152,18 @@ export default function Home() {
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent pointer-events-none"></div>
 
               <div className="relative z-10">
-                <h3 className="text-3xl md:text-xl font-black text-white leading-tight mb-2">
-                  Cejas y <br /> Pestañas.
+                <h3 className="text-red-500 font-bold tracking-widest uppercase mb-2 text-sm">
+                  Cejas y Pestañas.
                 </h3>
-                <p className="text-white/80 font-medium text-lg flex items-center gap-2">
-                  Ver especialidades{" "}
-                  <ArrowRight
-                    size={18}
-                    className="transition-transform group-hover:translate-x-2"
-                  />
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white leading-tight mb-4">
+                  Cursos <br /> Personalizados <br /> de Fotopose.
+                </h3>
+                <p className="text-white/80 font-medium text-lg md:text-xl flex items-center gap-2 max-w-sm">
+                  Herramientas clave para destacar en cualquier profesión u
+                  oficio.
                 </p>
               </div>
             </Link>
@@ -191,7 +187,7 @@ export default function Home() {
                 <p className="text-red-500 font-bold tracking-widest uppercase mb-2 text-sm">
                   Formación Exclusiva
                 </p>
-                <h3 className="text-xl md:text-2xl lg:text-6xl font-black text-white leading-tight mb-4">
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-black text-white leading-tight mb-4">
                   Cursos <br /> Personalizados <br /> de Fotopose.
                 </h3>
                 <p className="text-white/80 font-medium text-lg md:text-xl flex items-center gap-2 max-w-sm">

@@ -16,7 +16,7 @@ export default function ModelingInscriptionView() {
           <h1 className="text-2xl md:text-6xl lg:text-4xl font-black tracking-tighter text-slate-900 dark:text-white leading-[1.1]">
             Un modelo completo.
           </h1>
-          <p className="text-lg md:text-xl font-medium text-slate-500 dark:text-slate-400 max-w-2xl mt-2">
+          <p className="text-lg md:text-xl font-medium text-white/90 dark:text-white/90 max-w-2xl mt-2">
             Fórmate como modelo profesional desde cero. Desarrolla tu seguridad,
             domina las pasarelas y proyecta una imagen integral impecable.
           </p>
@@ -25,7 +25,7 @@ export default function ModelingInscriptionView() {
         {/* Imagen Hero Flotante */}
         <div className="absolute mt-20 w-full h-full aspect-video md:aspect-21/9 overflow-hidden shadow-2xl shadow-black/10 border border-slate-100 dark:border-gray-800">
           <Image
-            src="/images/pictures/mi_modelaje_2.png"
+            src="/images/pictures/ins_modeling_1.png"
             alt="Modelo profesional FOTOPOSEV"
             fill
             className="object-cover transition-transform duration-700 hover:scale-105"
